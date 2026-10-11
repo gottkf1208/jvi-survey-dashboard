@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>JUST VUILD 1·2강 응답 정리</title>
+<style>:root{color-scheme:light;padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px);box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<style>
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/f8f207dcfc68.woff2) format('woff2-variations');unicode-range:U+f9ca-fa0b,U+ff03-ff05,U+ff07,U+ff0a-ff0b,U+ff0d-ff19,U+ff1b,U+ff1d,U+ff20-ff5b,U+ff5d,U+ffe0-ffe3,U+ffe5-ffe6}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/52457d6c96a5.woff2) format('woff2-variations');unicode-range:U+d723-d728,U+d72a-d733,U+d735-d748,U+d74a-d74f,U+d752-d753,U+d755-d757,U+d75a-d75f,U+d762-d764,U+d766-d768,U+d76a-d76b,U+d76d-d76f,U+d771-d787,U+d789-d78b,U+d78d-d78f,U+d791-d797,U+d79a,U+d79c,U+d79e-d7a3,U+f900-f909,U+f90b-f92e}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/195416a60f59.woff2) format('woff2-variations');unicode-range:U+d679-d68b,U+d68e-d69e,U+d6a0,U+d6a2-d6a7,U+d6a9-d6c3,U+d6c6-d6c7,U+d6c9-d6cb,U+d6cd-d6d3,U+d6d5-d6d6,U+d6d8-d6e3,U+d6e5-d6e7,U+d6e9-d6fb,U+d6fd-d717,U+d719-d71f,U+d721-d722}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/7d37e9b98c09.woff2) format('woff2-variations');unicode-range:U+d5bc-d5c7,U+d5ca-d5cb,U+d5cd-d5cf,U+d5d1-d5d7,U+d5d9-d5da,U+d5dc,U+d5de-d5e3,U+d5e6-d5e7,U+d5e9-d5eb,U+d5ed-d5f6,U+d5f8,U+d5fa-d5ff,U+d602-d603,U+d605-d607,U+d609-d60f,U+d612-d613,U+d616-d61b,U+d61d-d637,U+d63a-d63b,U+d63d-d63f,U+d641-d647,U+d64a-d64c,U+d64e-d653,U+d656-d657,U+d659-d65b,U+d65d-d666,U+d668,U+d66a-d678}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/5dde9e5a7064.woff2) format('woff2-variations');unicode-range:U+d507,U+d509-d50b,U+d50d-d513,U+d515-d53b,U+d53e-d53f,U+d541-d543,U+d545-d54c,U+d54e,U+d550,U+d552-d557,U+d55a-d55b,U+d55d-d55f,U+d561-d564,U+d566-d567,U+d56a,U+d56c,U+d56e-d573,U+d576-d577,U+d579-d583,U+d585-d586,U+d58a-d5a4,U+d5a6-d5bb}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/d14d39d75951.woff2) format('woff2-variations');unicode-range:U+d464-d477,U+d47a-d47b,U+d47d-d47f,U+d481-d487,U+d489-d48a,U+d48c,U+d48e-d4e7,U+d4e9-d503,U+d505-d506}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/8d9a49de4537.woff2) format('woff2-variations');unicode-range:U+d3bf-d3c7,U+d3ca-d3cf,U+d3d1-d3eb,U+d3ee-d3ef,U+d3f1-d3f3,U+d3f5-d3fb,U+d3fd-d400,U+d402-d45b,U+d45d-d463}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/5b6d1db1b153.woff2) format('woff2-variations');unicode-range:U+d2ff,U+d302-d304,U+d306-d30b,U+d30f,U+d311-d313,U+d315-d31b,U+d31e,U+d322-d324,U+d326-d327,U+d32a-d32b,U+d32d-d32f,U+d331-d337,U+d339-d33c,U+d33e-d37b,U+d37e-d37f,U+d381-d383,U+d385-d38b,U+d38e-d390,U+d392-d397,U+d39a-d39b,U+d39d-d39f,U+d3a1-d3a7,U+d3a9-d3aa,U+d3ac,U+d3ae-d3b3,U+d3b5-d3b7,U+d3b9-d3bb,U+d3bd-d3be}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/24aaff40224a.woff2) format('woff2-variations');unicode-range:U+d257-d27f,U+d281-d29b,U+d29d-d29f,U+d2a1-d2ab,U+d2ad-d2b7,U+d2ba-d2bb,U+d2bd-d2bf,U+d2c1-d2c7,U+d2c9-d2ef,U+d2f2-d2f3,U+d2f5-d2f7,U+d2f9-d2fe}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/ab2861acb619.woff2) format('woff2-variations');unicode-range:U+d1b4,U+d1b6-d1f3,U+d1f5-d22b,U+d22e-d22f,U+d231-d233,U+d235-d23b,U+d23d-d240,U+d242-d256}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/487d0d45b533.woff2) format('woff2-variations');unicode-range:U+d105-d12f,U+d132-d133,U+d135-d137,U+d139-d13f,U+d141-d142,U+d144,U+d146-d14b,U+d14e-d14f,U+d151-d153,U+d155-d15b,U+d15e-d187,U+d189-d19f,U+d1a2-d1a3,U+d1a5-d1a7,U+d1a9-d1af,U+d1b2-d1b3}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/31e8eaedb597.woff2) format('woff2-variations');unicode-range:U+d04b-d04f,U+d051-d057,U+d059-d06b,U+d06d-d06f,U+d071-d073,U+d075-d07b,U+d07e-d0a3,U+d0a6-d0a7,U+d0a9-d0ab,U+d0ad-d0b3,U+d0b6,U+d0b8,U+d0ba-d0bf,U+d0c2-d0c3,U+d0c5-d0c7,U+d0c9-d0cf,U+d0d2,U+d0d6-d0db,U+d0de-d0df,U+d0e1-d0e3,U+d0e5-d0eb,U+d0ee-d0f0,U+d0f2-d104}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/0dc6669dfa70.woff2) format('woff2-variations');unicode-range:U+cfa2-cfc3,U+cfc5-cfdf,U+cfe2-cfe3,U+cfe5-cfe7,U+cfe9-cff4,U+cff6-cffb,U+cffd-cfff,U+d001-d003,U+d005-d017,U+d019-d033,U+d036-d037,U+d039-d03b,U+d03d-d04a}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/f82f4a0cb097.woff2) format('woff2-variations');unicode-range:U+cef0-cef3,U+cef6,U+cef9-ceff,U+cf01-cf03,U+cf05-cf07,U+cf09-cf0f,U+cf11-cf12,U+cf14-cf1b,U+cf1d-cf1f,U+cf21-cf2f,U+cf31-cf53,U+cf56-cf57,U+cf59-cf5b,U+cf5d-cf63,U+cf66,U+cf68,U+cf6a-cf6f,U+cf71-cf84,U+cf86-cf8b,U+cf8d-cfa1}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/5a1a70ddc902.woff2) format('woff2-variations');unicode-range:U+ce3c-ce57,U+ce5a-ce5b,U+ce5d-ce5f,U+ce61-ce67,U+ce6a,U+ce6c,U+ce6e-ce73,U+ce76-ce77,U+ce79-ce7b,U+ce7d-ce83,U+ce85-ce88,U+ce8a-ce8f,U+ce91-ce93,U+ce95-ce97,U+ce99-ce9f,U+cea2,U+cea4-ceab,U+cead-cee3,U+cee6-cee7,U+cee9-ceeb,U+ceed-ceef}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/5fa6b54f0d35.woff2) format('woff2-variations');unicode-range:U+cd92-cd93,U+cd96-cd97,U+cd99-cd9b,U+cd9d-cda3,U+cda6-cda8,U+cdaa-cdaf,U+cdb1-cdc3,U+cdc5-cdcb,U+cdcd-cde7,U+cde9-ce03,U+ce05-ce1f,U+ce22-ce34,U+ce36-ce3b}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/9a442dc2802e.woff2) format('woff2-variations');unicode-range:U+ccef-cd07,U+cd0a-cd0b,U+cd0d-cd1a,U+cd1c,U+cd1e-cd2b,U+cd2d-cd5b,U+cd5d-cd77,U+cd79-cd91}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/4dd8a98fe69b.woff2) format('woff2-variations');unicode-range:U+cc3f-cc43,U+cc46-cc47,U+cc49-cc4b,U+cc4d-cc53,U+cc55-cc58,U+cc5a-cc5f,U+cc61-cc97,U+cc9a-cc9b,U+cc9d-cc9f,U+cca1-cca7,U+ccaa,U+ccac,U+ccae-ccb3,U+ccb6-ccb7,U+ccb9-ccbb,U+ccbd-cccf,U+ccd1-cce3,U+cce5-ccee}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/1dd1cc034db1.woff2) format('woff2-variations');unicode-range:U+cb91-cbd3,U+cbd5-cbe3,U+cbe5-cc0b,U+cc0e-cc0f,U+cc11-cc13,U+cc15-cc1b,U+cc1d-cc20,U+cc23-cc27,U+cc2a-cc2b,U+cc2d,U+cc2f,U+cc31-cc37,U+cc3a,U+cc3c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/1a0542869697.woff2) format('woff2-variations');unicode-range:U+caf4-cb47,U+cb4a-cb90}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/edb3e94f5833.woff2) format('woff2-variations');unicode-range:U+ca4a-ca4b,U+ca4e-ca4f,U+ca51-ca53,U+ca55-ca5b,U+ca5d-ca60,U+ca62-ca83,U+ca85-cabb,U+cabe-cabf,U+cac1-cac3,U+cac5-cacb,U+cacd-cad0,U+cad2,U+cad4-cad8,U+cada-caf3}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/a84a4310c822.woff2) format('woff2-variations');unicode-range:U+c996-c997,U+c99a-c99c,U+c99e-c9bf,U+c9c2-c9c3,U+c9c5-c9c7,U+c9c9-c9cf,U+c9d2,U+c9d4,U+c9d7-c9d8,U+c9db,U+c9de-c9df,U+c9e1-c9e3,U+c9e5-c9e6,U+c9e8-c9eb,U+c9ee-c9f0,U+c9f2-c9f7,U+c9f9-ca0b,U+ca0d-ca28,U+ca2a-ca49}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/18f389ec5305.woff2) format('woff2-variations');unicode-range:U+c8e9-c8f4,U+c8f6-c8fb,U+c8fe-c8ff,U+c901-c903,U+c905-c90b,U+c90e-c910,U+c912-c917,U+c919-c92b,U+c92d-c94f,U+c951-c953,U+c955-c96b,U+c96d-c973,U+c975-c987,U+c98a-c98b,U+c98d-c98f,U+c991-c995}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/408e5a73b7bd.woff2) format('woff2-variations');unicode-range:U+c841-c84b,U+c84d-c86f,U+c872-c873,U+c875-c877,U+c879-c87f,U+c882-c884,U+c887-c88a,U+c88d-c8c3,U+c8c5-c8df,U+c8e1-c8e8}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/7aaf9bdb6506.woff2) format('woff2-variations');unicode-range:U+c779-c77b,U+c77e-c782,U+c786,U+c78b,U+c78d,U+c78f,U+c792-c793,U+c795,U+c797,U+c799-c79f,U+c7a2,U+c7a7-c7ab,U+c7ae-c7bb,U+c7bd-c7c0,U+c7c2-c7c7,U+c7c9-c7dc,U+c7de-c7ff,U+c802-c803,U+c805-c807,U+c809,U+c80b-c80f,U+c812,U+c814,U+c817-c81b,U+c81e-c81f,U+c821-c823,U+c825-c82e,U+c830-c837,U+c839-c83b,U+c83d-c840}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/46166a6ff4f5.woff2) format('woff2-variations');unicode-range:U+c6bb-c6bf,U+c6c2,U+c6c4,U+c6c6-c6cb,U+c6ce-c6cf,U+c6d1-c6d3,U+c6d5-c6db,U+c6dd-c6df,U+c6e1-c6e7,U+c6e9-c6eb,U+c6ed-c6ef,U+c6f1-c6f8,U+c6fa-c703,U+c705-c707,U+c709-c70b,U+c70d-c716,U+c718,U+c71a-c71f,U+c722-c723,U+c725-c727,U+c729-c734,U+c736-c73b,U+c73e-c73f,U+c741-c743,U+c745-c74b,U+c74e-c750,U+c752-c757,U+c759-c773,U+c776-c777}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/6cb7c718bb85.woff2) format('woff2-variations');unicode-range:U+c5f5-c5fb,U+c5fe,U+c602-c605,U+c607,U+c609-c60f,U+c611-c61a,U+c61c-c623,U+c626-c627,U+c629-c62b,U+c62d,U+c62f-c632,U+c636,U+c638,U+c63a-c63f,U+c642-c643,U+c645-c647,U+c649-c652,U+c656-c65b,U+c65d-c65f,U+c661-c663,U+c665-c677,U+c679-c67b,U+c67d-c693,U+c696-c697,U+c699-c69b,U+c69d-c6a3,U+c6a6,U+c6a8,U+c6aa-c6af,U+c6b2-c6b3,U+c6b5-c6b7,U+c6b9-c6ba}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/11d9cb69612f.woff2) format('woff2-variations');unicode-range:U+c517-c527,U+c52a-c52b,U+c52d-c52f,U+c531-c538,U+c53a,U+c53c,U+c53e-c543,U+c546-c547,U+c54b,U+c54d-c552,U+c556,U+c55a-c55b,U+c55d,U+c55f,U+c562-c563,U+c565-c567,U+c569-c56f,U+c572,U+c574,U+c576-c57b,U+c57e-c57f,U+c581-c583,U+c585-c586,U+c588-c58b,U+c58e,U+c590,U+c592-c596,U+c599-c5b3,U+c5b6-c5b7,U+c5ba,U+c5be-c5c3,U+c5ca-c5cb,U+c5cd,U+c5cf,U+c5d2-c5d3,U+c5d5-c5d7,U+c5d9-c5df,U+c5e1-c5e2,U+c5e4,U+c5e6-c5eb,U+c5ef,U+c5f1-c5f3}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/23ee1614a57d.woff2) format('woff2-variations');unicode-range:U+c475-c4ef,U+c4f2-c4f3,U+c4f5-c4f7,U+c4f9-c4ff,U+c502-c50b,U+c50d-c516}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/a984b9a95060.woff2) format('woff2-variations');unicode-range:U+c3d0-c3d7,U+c3da-c3db,U+c3dd-c3de,U+c3e1-c3ec,U+c3ee-c3f3,U+c3f5-c42b,U+c42d-c463,U+c466-c474}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/0bbf80e8e60e.woff2) format('woff2-variations');unicode-range:U+c32b-c367,U+c36a-c36b,U+c36d-c36f,U+c371-c377,U+c37a-c37b,U+c37e-c383,U+c385-c387,U+c389-c3cf}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/51868cf27fc9.woff2) format('woff2-variations');unicode-range:U+c26a-c26b,U+c26d-c26f,U+c271-c273,U+c275-c27b,U+c27e-c287,U+c289-c28f,U+c291-c297,U+c299-c29a,U+c29c-c2a3,U+c2a5-c2a7,U+c2a9-c2ab,U+c2ad-c2b3,U+c2b6,U+c2b8,U+c2ba-c2bb,U+c2bd-c2db,U+c2de-c2df,U+c2e1-c2e2,U+c2e5-c2ea,U+c2ee,U+c2f0,U+c2f2-c2f5,U+c2f7,U+c2fa-c2fb,U+c2fd-c2ff,U+c301-c307,U+c309-c30c,U+c30e-c312,U+c315-c323,U+c325-c328,U+c32a}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/e501b63f22d3.woff2) format('woff2-variations');unicode-range:U+c1bc-c1c3,U+c1c5-c1df,U+c1e1-c1fb,U+c1fd-c203,U+c205-c20c,U+c20e,U+c210-c217,U+c21a-c21b,U+c21d-c21e,U+c221-c227,U+c229-c22a,U+c22c,U+c22e,U+c230,U+c233-c24f,U+c251-c257,U+c259-c269}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/aca7635e0db9.woff2) format('woff2-variations');unicode-range:U+c101-c11b,U+c11f,U+c121-c123,U+c125-c12b,U+c12e,U+c132-c137,U+c13a-c13b,U+c13d-c13f,U+c141-c147,U+c14a,U+c14c-c153,U+c155-c157,U+c159-c15b,U+c15d-c166,U+c169-c16f,U+c171-c177,U+c179-c18b,U+c18e-c18f,U+c191-c193,U+c195-c19b,U+c19d-c19e,U+c1a0,U+c1a2-c1a4,U+c1a6-c1bb}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/32ed9c95af98.woff2) format('woff2-variations');unicode-range:U+c049-c057,U+c059-c05b,U+c05d-c05f,U+c061-c067,U+c069-c08f,U+c091-c0ab,U+c0ae-c0af,U+c0b1-c0b3,U+c0b5,U+c0b7-c0bb,U+c0be,U+c0c2-c0c7,U+c0ca-c0cb,U+c0cd-c0cf,U+c0d1-c0d7,U+c0d9-c0da,U+c0dc,U+c0de-c0e3,U+c0e5-c0eb,U+c0ed-c0f3,U+c0f6,U+c0f8,U+c0fa-c0ff}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/cace953e6da8.woff2) format('woff2-variations');unicode-range:U+bfa7-bfaf,U+bfb1-bfc4,U+bfc6-bfcb,U+bfce-bfcf,U+bfd1-bfd3,U+bfd5-bfdb,U+bfdd-c048}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/c8fd7d8dfc91.woff2) format('woff2-variations');unicode-range:U+bf07,U+bf09-bf3f,U+bf41-bf4f,U+bf52-bf54,U+bf56-bfa6}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/b66638be37ed.woff2) format('woff2-variations');unicode-range:U+be56,U+be58,U+be5c-be5f,U+be62-be63,U+be65-be67,U+be69-be74,U+be76-be7b,U+be7e-be7f,U+be81-be8e,U+be90,U+be92-bea7,U+bea9-becf,U+bed2-bed3,U+bed5-bed6,U+bed9-bee3,U+bee6-bf06}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/f8ab5612abd1.woff2) format('woff2-variations');unicode-range:U+bdb0-bdd3,U+bdd5-bdef,U+bdf1-be0b,U+be0d-be0f,U+be11-be13,U+be15-be43,U+be46-be47,U+be49-be4b,U+be4d-be53}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/3f631e140751.woff2) format('woff2-variations');unicode-range:U+bd03,U+bd06,U+bd08,U+bd0a-bd0f,U+bd11-bd22,U+bd25-bd47,U+bd49-bd58,U+bd5a-bd7f,U+bd82-bd83,U+bd85-bd87,U+bd8a-bd8f,U+bd91-bd92,U+bd94,U+bd96-bd98,U+bd9a-bdaf}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/3db939eb99fb.woff2) format('woff2-variations');unicode-range:U+bc4e-bc83,U+bc86-bc87,U+bc89-bc8b,U+bc8d-bc93,U+bc96,U+bc98,U+bc9b-bc9f,U+bca2-bca3,U+bca5-bca7,U+bca9-bcb2,U+bcb4-bcbb,U+bcbe-bcbf,U+bcc1-bcc3,U+bcc5-bccc,U+bcce-bcd0,U+bcd2-bcd4,U+bcd6-bcf3,U+bcf7,U+bcf9-bcfb,U+bcfd-bd02}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/67d64fe02c3c.woff2) format('woff2-variations');unicode-range:U+bb90-bba3,U+bba5-bbab,U+bbad-bbbf,U+bbc1-bbf7,U+bbfa-bbfb,U+bbfd-bbfe,U+bc01-bc07,U+bc09-bc0a,U+bc0e,U+bc10,U+bc12-bc13,U+bc17,U+bc19-bc1a,U+bc1e,U+bc20-bc23,U+bc26,U+bc28,U+bc2a-bc2c,U+bc2e-bc2f,U+bc32-bc33,U+bc35-bc37,U+bc39-bc3f,U+bc41-bc42,U+bc44,U+bc46-bc48,U+bc4a-bc4d}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/6283224ff8e6.woff2) format('woff2-variations');unicode-range:U+bae6-bafb,U+bafd-bb17,U+bb19-bb33,U+bb37,U+bb39-bb3a,U+bb3d-bb43,U+bb45-bb46,U+bb48,U+bb4a-bb4f,U+bb51-bb53,U+bb55-bb57,U+bb59-bb62,U+bb64-bb8f}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/7f2d11da1bdd.woff2) format('woff2-variations');unicode-range:U+ba30-ba37,U+ba3a-ba3b,U+ba3d-ba3f,U+ba41-ba47,U+ba49-ba4a,U+ba4c,U+ba4e-ba53,U+ba56-ba57,U+ba59-ba5b,U+ba5d-ba63,U+ba65-ba66,U+ba68-ba6f,U+ba71-ba73,U+ba75-ba77,U+ba79-ba84,U+ba86,U+ba88-baa7,U+baaa,U+baad-baaf,U+bab1-bab7,U+baba,U+babc,U+babe-bae5}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/690b200957a8.woff2) format('woff2-variations');unicode-range:U+b96e-b973,U+b976-b977,U+b979-b97b,U+b97d-b983,U+b986,U+b988,U+b98a-b98d,U+b98f-b9ab,U+b9ae-b9af,U+b9b1-b9b3,U+b9b5-b9bb,U+b9be,U+b9c0,U+b9c2-b9c7,U+b9ca-b9cb,U+b9cd,U+b9d2-b9d7,U+b9da,U+b9dc,U+b9df-b9e0,U+b9e2,U+b9e6-b9e7,U+b9e9-b9f3,U+b9f6,U+b9f8,U+b9fb-ba2f}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/606298849415.woff2) format('woff2-variations');unicode-range:U+b8bf-b8cb,U+b8cd-b8e0,U+b8e2-b8e7,U+b8ea-b8eb,U+b8ed-b8ef,U+b8f1-b8f7,U+b8fa,U+b8fc,U+b8fe-b903,U+b905-b917,U+b919-b91f,U+b921-b93b,U+b93d-b957,U+b95a-b95b,U+b95d-b95f,U+b961-b967,U+b969-b96c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/c9fb51c27bfb.woff2) format('woff2-variations');unicode-range:U+b80d-b80f,U+b811-b817,U+b81a,U+b81c-b823,U+b826-b827,U+b829-b82b,U+b82d-b833,U+b836,U+b83a-b83f,U+b841-b85b,U+b85e-b85f,U+b861-b863,U+b865-b86b,U+b86e,U+b870,U+b872-b8af,U+b8b1-b8be}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/a6b41cd2be84.woff2) format('woff2-variations');unicode-range:U+b74d-b75f,U+b761-b763,U+b765-b774,U+b776-b77b,U+b77e-b77f,U+b781-b783,U+b785-b78b,U+b78e,U+b792-b796,U+b79a-b79b,U+b79d-b7a7,U+b7aa,U+b7ae-b7b3,U+b7b6-b7c8,U+b7ca-b7eb,U+b7ee-b7ef,U+b7f1-b7f3,U+b7f5-b7fb,U+b7fe,U+b802-b806,U+b80a-b80b}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/5a27706c990b.woff2) format('woff2-variations');unicode-range:U+b6a7-b6aa,U+b6ac-b6b0,U+b6b2-b6ef,U+b6f1-b727,U+b72a-b72b,U+b72d-b72e,U+b731-b737,U+b739-b73a,U+b73c-b743,U+b745-b74c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/14dd52f677d4.woff2) format('woff2-variations');unicode-range:U+b605-b60f,U+b612-b617,U+b619-b624,U+b626-b69b,U+b69e-b6a3,U+b6a5-b6a6}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/1466429f3f31.woff2) format('woff2-variations');unicode-range:U+b55f,U+b562-b583,U+b585-b59f,U+b5a2-b5a3,U+b5a5-b5a7,U+b5a9-b5b2,U+b5b5-b5ba,U+b5bd-b604}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/c633bf32b7dd.woff2) format('woff2-variations');unicode-range:U+b4a5-b4b6,U+b4b8-b4bf,U+b4c1-b4c7,U+b4c9-b4db,U+b4de-b4df,U+b4e1-b4e2,U+b4e5-b4eb,U+b4ee,U+b4f0,U+b4f2-b513,U+b516-b517,U+b519-b51a,U+b51d-b523,U+b526,U+b528,U+b52b-b52f,U+b532-b533,U+b535-b537,U+b539-b53f,U+b541-b544,U+b546-b54b,U+b54d-b54f,U+b551-b55b,U+b55d-b55e}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/df87ad80d1e0.woff2) format('woff2-variations');unicode-range:U+b3f8-b3fb,U+b3fd-b40f,U+b411-b417,U+b419-b41b,U+b41d-b41f,U+b421-b427,U+b42a-b42b,U+b42d-b44f,U+b452-b453,U+b455-b457,U+b459-b45f,U+b462-b464,U+b466-b46b,U+b46d-b47f,U+b481-b4a3}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/5e1f940a7572.woff2) format('woff2-variations');unicode-range:U+b342-b353,U+b356-b357,U+b359-b35b,U+b35d-b35e,U+b360-b363,U+b366,U+b368,U+b36a-b36d,U+b36f,U+b372-b373,U+b375-b377,U+b379-b37f,U+b381-b382,U+b384,U+b386-b38b,U+b38d-b3c3,U+b3c6-b3c7,U+b3c9-b3ca,U+b3cd-b3d3,U+b3d6,U+b3d8,U+b3da-b3f7}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/53e7b6e9d2bd.woff2) format('woff2-variations');unicode-range:U+b27c-b283,U+b285-b28f,U+b292-b293,U+b295-b297,U+b29a-b29f,U+b2a1-b2a4,U+b2a7-b2a9,U+b2ab,U+b2ad-b2c7,U+b2ca-b2cb,U+b2cd-b2cf,U+b2d1-b2d7,U+b2da,U+b2dc,U+b2de-b2e3,U+b2e7,U+b2e9-b2ea,U+b2ef-b2f3,U+b2f6,U+b2f8,U+b2fa-b2fb,U+b2fd-b2fe,U+b302-b303,U+b305-b307,U+b309-b30f,U+b312,U+b316-b31b,U+b31d-b341}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/0ec4f5e08dca.woff2) format('woff2-variations');unicode-range:U+b1d6-b1e7,U+b1e9-b1fc,U+b1fe-b203,U+b206-b207,U+b209-b20b,U+b20d-b213,U+b216-b21f,U+b221-b257,U+b259-b273,U+b275-b27b}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/dc0b857087e8.woff2) format('woff2-variations');unicode-range:U+b120-b122,U+b126-b127,U+b129-b12b,U+b12d-b133,U+b136,U+b138,U+b13a-b13f,U+b142-b143,U+b145-b14f,U+b151-b153,U+b156-b157,U+b159-b177,U+b17a-b17b,U+b17d-b17f,U+b181-b187,U+b189-b18c,U+b18e-b191,U+b195-b1a7,U+b1a9-b1cb,U+b1cd-b1d5}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/c815b54545f5.woff2) format('woff2-variations');unicode-range:U+b05f-b07b,U+b07e-b07f,U+b081-b083,U+b085-b08b,U+b08d-b097,U+b09b,U+b09d-b09f,U+b0a2-b0a7,U+b0aa,U+b0b0,U+b0b2,U+b0b6-b0b7,U+b0b9-b0bb,U+b0bd-b0c3,U+b0c6-b0c7,U+b0ca-b0cf,U+b0d1-b0df,U+b0e1-b0e4,U+b0e6-b107,U+b10a-b10b,U+b10d-b10f,U+b111-b112,U+b114-b117,U+b119-b11a,U+b11c-b11f}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/a1ff112596f1.woff2) format('woff2-variations');unicode-range:U+afac-afb7,U+afba-afbb,U+afbd-afbf,U+afc1-afc6,U+afca-afcc,U+afce-afd3,U+afd5-afe7,U+afe9-afef,U+aff1-b00b,U+b00d-b00f,U+b011-b013,U+b015-b01b,U+b01d-b027,U+b029-b043,U+b045-b047,U+b049,U+b04b,U+b04d-b052,U+b055-b056,U+b058-b05c,U+b05e}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/55abb8fae1b1.woff2) format('woff2-variations');unicode-range:U+af03-af07,U+af09-af2b,U+af2e-af33,U+af35-af3b,U+af3e-af40,U+af44-af47,U+af4a-af5c,U+af5e-af63,U+af65-af7f,U+af81-afab}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/bcbd6e0ef64e.woff2) format('woff2-variations');unicode-range:U+ae56-ae5b,U+ae5e-ae60,U+ae62-ae64,U+ae66-ae67,U+ae69-ae6b,U+ae6d-ae83,U+ae85-aebb,U+aebf,U+aec1-aec3,U+aec5-aecb,U+aece,U+aed0,U+aed2-aed7,U+aed9-aef3,U+aef5-af02}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/6e4ce320f982.woff2) format('woff2-variations');unicode-range:U+ad9c-ada3,U+ada5-adbf,U+adc1-adc3,U+adc5-adc7,U+adc9-add2,U+add4-addb,U+addd-addf,U+ade1-ade3,U+ade5-adf7,U+adfa-adfb,U+adfd-adff,U+ae02-ae07,U+ae0a,U+ae0c,U+ae0e-ae13,U+ae15-ae2f,U+ae31-ae33,U+ae35-ae37,U+ae39-ae3f,U+ae42,U+ae44,U+ae46-ae49,U+ae4b,U+ae4f,U+ae51-ae53,U+ae55}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/ec8a0c8f7703.woff2) format('woff2-variations');unicode-range:U+ace2-ace3,U+ace5-ace6,U+ace9-acef,U+acf2,U+acf4,U+acf7-acfb,U+acfe-acff,U+ad01-ad03,U+ad05-ad0b,U+ad0d-ad10,U+ad12-ad1b,U+ad1d-ad33,U+ad35-ad48,U+ad4a-ad4f,U+ad51-ad6b,U+ad6e-ad6f,U+ad71-ad72,U+ad77-ad7c,U+ad7e,U+ad80,U+ad82-ad87,U+ad89-ad8b,U+ad8d-ad8f,U+ad91-ad9b}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/2d1d29c011db.woff2) format('woff2-variations');unicode-range:U+ac25-ac2c,U+ac2e,U+ac30,U+ac32-ac37,U+ac39-ac3f,U+ac41-ac4c,U+ac4e-ac6f,U+ac72-ac73,U+ac75-ac76,U+ac79-ac7f,U+ac82,U+ac84-ac88,U+ac8a-ac8b,U+ac8d-ac8f,U+ac91-ac93,U+ac95-ac9b,U+ac9d-ac9e,U+aca1-aca7,U+acab,U+acad-acaf,U+acb1-acb7,U+acba-acbb,U+acbe-acc0,U+acc2-acc3,U+acc5-acdf}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/9212ac8a57ff.woff2) format('woff2-variations');unicode-range:U+99df,U+99ed,U+99f1,U+99ff,U+9a01,U+9a08,U+9a0e-9a0f,U+9a19,U+9a2b,U+9a30,U+9a36-9a37,U+9a40,U+9a43,U+9a45,U+9a4d,U+9a55,U+9a57,U+9a5a-9a5b,U+9a5f,U+9a62,U+9a65,U+9a69-9a6a,U+9aa8,U+9ab8,U+9ad3,U+9ae5,U+9aee,U+9b1a,U+9b27,U+9b2a,U+9b31,U+9b3c,U+9b41-9b45,U+9b4f,U+9b54,U+9b5a,U+9b6f,U+9b8e,U+9b91,U+9b9f,U+9bab,U+9bae,U+9bc9,U+9bd6,U+9be4,U+9be8,U+9c0d,U+9c10,U+9c12,U+9c15,U+9c25,U+9c32,U+9c3b,U+9c47,U+9c49,U+9c57,U+9ce5,U+9ce7,U+9ce9,U+9cf3-9cf4,U+9cf6,U+9d09,U+9d1b,U+9d26,U+9d28,U+9d3b,U+9d51,U+9d5d,U+9d60-9d61,U+9d6c,U+9d72,U+9da9,U+9daf,U+9db4,U+9dc4,U+9dd7,U+9df2,U+9df8-9dfa,U+9e1a,U+9e1e,U+9e75,U+9e79,U+9e7d,U+9e7f,U+9e92-9e93,U+9e97,U+9e9d,U+9e9f,U+9ea5,U+9eb4-9eb5,U+9ebb,U+9ebe,U+9ec3,U+9ecd-9ece,U+9ed4,U+9ed8,U+9edb-9edc,U+9ede,U+9ee8,U+9ef4,U+9f07-9f08,U+9f0e,U+9f13,U+9f20,U+9f3b,U+9f4a-9f4b,U+9f4e,U+9f52,U+9f5f,U+9f61,U+9f67,U+9f6a,U+9f6c,U+9f77,U+9f8d,U+9f90,U+9f95,U+9f9c,U+ac02-ac03,U+ac05-ac06,U+ac09-ac0f,U+ac17-ac18,U+ac1b,U+ac1e-ac1f,U+ac21-ac23}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/20e8ea23bb45.woff2) format('woff2-variations');unicode-range:U+338c-339c,U+339f-33a0,U+33a2-33cb,U+33cf-33d0,U+33d3,U+33d6,U+33d8,U+33db-33dd,U+4e01,U+4e03,U+4e07-4e08,U+4e11,U+4e14-4e15,U+4e18-4e19,U+4e1e,U+4e32,U+4e38-4e39,U+4e42-4e43,U+4e45,U+4e4d-4e4f,U+4e56,U+4e58-4e59,U+4e5d-4e5e,U+4e6b,U+4e6d,U+4e73,U+4e76-4e77,U+4e7e,U+4e82,U+4e86,U+4e88,U+4e8e,U+4e90-4e92,U+4e94-4e95,U+4e98,U+4e9b,U+4e9e,U+4ea1-4ea2,U+4ea4-4ea6,U+4ea8,U+4eab,U+4ead-4eae,U+4eb6,U+4ec0-4ec1,U+4ec4,U+4ec7,U+4ecb,U+4ecd,U+4ed4-4ed5,U+4ed7-4ed9,U+4edd,U+4edf,U+4ee4,U+4ef0,U+4ef2,U+4ef6-4ef7,U+4efb,U+4f01,U+4f09,U+4f0b,U+4f0d-4f11,U+4f2f,U+4f34,U+4f36,U+4f38,U+4f3a,U+4f3c-4f3d}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/f60673f06d9b.woff2) format('woff2-variations');unicode-range:U+3136,U+3138,U+313a-3140,U+3143-3144,U+3150,U+3152,U+3154-3156,U+3158-315b,U+315d-315f,U+3162,U+3164-318c,U+318e,U+3200-321b,U+3231,U+3239,U+3251-325a,U+3260-327b,U+327e-327f,U+328a-3290,U+3294,U+329e,U+32a5,U+3380-3384,U+3388-338b}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/d062209e1fe0.woff2) format('woff2-variations');unicode-range:U+2f7d,U+2f7f-2f8b,U+2f8e-2f90,U+2f92-2f97,U+2f99-2fa0,U+2fa2-2fa3,U+2fa5-2fa9,U+2fac-2fb1,U+2fb3-2fbc,U+2fc1-2fca,U+2fcd-2fd4,U+3003,U+3012-3019,U+301c,U+301e-3020,U+3036,U+3041,U+3043,U+3045,U+3047,U+3049,U+304e,U+3050,U+3052,U+3056,U+305a,U+305c,U+305e,U+3062,U+3065,U+306c,U+3070-307d,U+3080,U+3085,U+3087,U+308e,U+3090-3091,U+30a1,U+30a5,U+30a9,U+30ae,U+30b1-30b2,U+30b4,U+30b6,U+30bc-30be,U+30c2,U+30c5,U+30cc,U+30d2,U+30d4,U+30d8-30dd,U+30e4,U+30e6,U+30e8,U+30ee,U+30f0-30f2,U+30f4-30f6,U+3133,U+3135}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/0500f022f2d6.woff2) format('woff2-variations');unicode-range:U+2541-254b,U+25a4-25a9,U+25b1,U+25b5,U+25b9,U+25bf,U+25c1,U+25c3,U+25c9-25ca,U+25cc,U+25ce,U+25d0-25d1,U+25e6,U+25ef,U+260f,U+261d,U+261f,U+262f,U+2660,U+2664,U+2667-2669,U+266d,U+266f,U+2716,U+271a,U+273d,U+2756,U+2776-277f,U+278a-2793,U+2963,U+2965,U+2ac5-2ac6,U+2acb-2acc,U+2f00,U+2f04,U+2f06,U+2f08,U+2f0a-2f0b,U+2f11-2f12,U+2f14,U+2f17-2f18,U+2f1c-2f1d,U+2f1f-2f20,U+2f23-2f26,U+2f28-2f29,U+2f2b,U+2f2d,U+2f2f-2f32,U+2f38,U+2f3c-2f40,U+2f42-2f4c,U+2f4f-2f52,U+2f54-2f58,U+2f5a-2f66,U+2f69-2f70,U+2f72-2f76,U+2f78,U+2f7a-2f7c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/bd763c9d1b00.woff2) format('woff2-variations');unicode-range:U+2479-2487,U+249c-24d1,U+24d3-24d7,U+24d9-24e9,U+24eb-24f4,U+2500-2501,U+2503,U+250c-2513,U+2515-2516,U+2518-2540}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/639577098677.woff2) format('woff2-variations');unicode-range:U+215b-215e,U+2162-2169,U+2170-2179,U+2195-2199,U+21b0-21b4,U+21bc,U+21c0,U+21c4-21c5,U+21cd,U+21cf-21d4,U+21e0-21e3,U+21e6-21e9,U+2200,U+2202-2203,U+2206-2209,U+220b-220c,U+220f,U+2211,U+2213,U+221a,U+221d-2220,U+2222,U+2225-2227,U+2229-222c,U+222e,U+2234-2237,U+223d,U+2243,U+2245,U+2248,U+2250-2253,U+225a,U+2260-2262,U+2264-2267,U+226a-226b,U+226e-2273,U+2276-2277,U+2279-227b,U+2280-2287,U+228a-228b,U+2295-2297,U+22a3-22a5,U+22bb-22bc,U+22ce-22cf,U+22da-22db,U+22ee-22ef,U+2306,U+2312,U+2314,U+2467-2478}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/101137b8465d.woff2) format('woff2-variations');unicode-range:U+81-82,U+84,U+a2-a5,U+a7-a8,U+aa,U+ac,U+b1-b3,U+b6,U+b8-ba,U+bc-be,U+c0,U+c2,U+c6-cb,U+ce-d0,U+d4,U+d8-d9,U+db-dc,U+de-df,U+e6,U+eb,U+ee-f0,U+f4,U+f7-f9,U+fb,U+fe-ff,U+111,U+126-127,U+132-133,U+138,U+13f-142,U+149-14b,U+152-153,U+166-167,U+2bc,U+2c7,U+2d0,U+2d8-2d9,U+2db-2dd,U+391-394,U+396-3a1,U+3a3-3a9,U+3b2-3b6,U+3b8,U+3bc,U+3be-3c1,U+3c3-3c9,U+2010,U+2015-2016,U+2018-2019,U+201b,U+201f-2021,U+2025,U+2030,U+2033-2036,U+203c,U+203e,U+2042,U+2074,U+207a-207f,U+2081-2084,U+2109,U+2113,U+2116,U+2121,U+2126,U+212b,U+2153-2154}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/cb1aaaad98ac.woff2) format('woff2-variations');unicode-range:U+e8,U+2da,U+2160,U+2194,U+3054,U+3058,U+306d,U+3086,U+308d,U+30ac,U+30bb,U+30c4,U+30cd-30ce,U+30e2,U+3132,U+3146,U+3149,U+339d,U+4e3b,U+4f0a,U+4fdd,U+4fe1,U+5409,U+540c,U+5834,U+592a-592b,U+5b9a,U+5dde,U+5e0c,U+5e73,U+5f0f,U+60f3,U+653f,U+661f,U+662f,U+667a,U+683c,U+6b4c,U+6c11,U+767c,U+76ee,U+76f4,U+77f3,U+79d1,U+7a7a,U+7b2c,U+7d22,U+8207,U+8a00,U+8a71,U+9280,U+9580,U+958b,U+96c6,U+9762,U+98df,U+9ed1,U+ac2d,U+adc8,U+add3,U+af48,U+b014,U+b134-b135,U+b158,U+b2aa,U+b35f,U+b6a4,U+b9cf,U+bb63,U+bd23,U+be91,U+c29b,U+c3f4,U+c42c,U+c55c,U+c573,U+c58f,U+c78c,U+c7dd,U+c8f5,U+cad1,U+cc48,U+cf10,U+cf20,U+d03c,U+d07d,U+d2a0,U+d30e,U+d38d,U+d3a8,U+d3c8,U+d5e5,U+d5f9,U+d6e4,U+f90a,U+ff02,U+ff1c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/4433d9fbf44e.woff2) format('woff2-variations');unicode-range:U+3b1,U+2466,U+25a1,U+25a3,U+261c,U+3008-3009,U+305b,U+305d,U+3069,U+30a7,U+30ba,U+30cf,U+30ef,U+3151,U+3157,U+4e4b,U+4e5f,U+4e8c,U+4eca,U+4ed6,U+4f5b,U+50cf,U+5149,U+5165,U+5171,U+5229,U+529b,U+5316,U+539f,U+53f2,U+571f,U+5728,U+58eb,U+591c,U+5b78,U+5c11,U+5c55,U+5ddd,U+5e02,U+5fb7,U+60c5,U+610f,U+611f,U+6625,U+66f8,U+6797,U+679c,U+682a,U+6d2a,U+706b,U+7406,U+767b,U+76f8,U+77e5,U+7acb,U+898b,U+8a69,U+8def,U+8fd1,U+901a,U+90e8,U+91cd,U+975e,U+ae14,U+ae6c,U+aec0,U+afc7,U+afc9,U+b01c,U+b028,U+b308,U+b311,U+b314,U+b31c,U+b524,U+b560,U+b764,U+b920,U+b9e3,U+bd48,U+be7d,U+c0db,U+c231,U+c270,U+c2e3,U+c37d,U+c3ed,U+c530,U+c6a5,U+c6dc,U+c7a4,U+c954,U+c974,U+d000,U+d565,U+d667,U+d6c5,U+d79d,U+ff1e}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/3129195313b7.woff2) format('woff2-variations');unicode-range:U+131,U+2032,U+2465,U+2642,U+3048,U+3051,U+3083-3084,U+308f,U+30c0,U+30d1,U+30d3,U+30d6,U+30df,U+30e7,U+3153,U+4e16,U+4e8b,U+4ee5,U+5206,U+52a0,U+52d5,U+53e4,U+53ef,U+54c1,U+57ce,U+597d,U+5b8c,U+5ea6,U+5f8c,U+5f97,U+6210,U+6240,U+624b,U+6728,U+6bd4,U+7236,U+7269,U+7279,U+738b,U+7528,U+7530,U+767e,U+798f,U+8005,U+8a18,U+90fd,U+91cc,U+9577,U+9593,U+98a8,U+ac20,U+acf6,U+ad90,U+af5d,U+af80,U+afcd,U+aff0,U+b0a1,U+b0b5,U+b1fd,U+b2fc,U+b380,U+b51b,U+b584,U+b5b3,U+b8fd,U+b93c,U+b9f4,U+bb44,U+bc08,U+bc27,U+bc49,U+be55,U+be64,U+bfb0,U+bfc5,U+c178,U+c21f,U+c314,U+c4f1,U+c58d,U+c664,U+c698,U+c6a7,U+c6c1,U+c9ed,U+cac0,U+cacc,U+cad9,U+ccb5,U+cdcc,U+d0e4,U+d143,U+d320,U+d330,U+d54d,U+ff06,U+ff1f,U+ff5e}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/b55328360830.woff2) format('woff2-variations');unicode-range:U+b4,U+20a9,U+20ac,U+2190,U+24d8,U+2502,U+2514,U+2592,U+25c7-25c8,U+2663,U+3060,U+3064,U+3081,U+3088,U+30a3,U+30a6,U+30aa,U+30b5,U+30c7,U+30ca-30cb,U+30d0,U+30e3,U+30e5,U+339e,U+4e09,U+4eac,U+4f5c,U+5167-5168,U+516c,U+51fa,U+5408,U+540d,U+591a,U+5b57,U+6211,U+65b9,U+660e,U+6642,U+6700,U+6b63,U+6e2f,U+7063,U+7532,U+793e,U+81ea,U+8272,U+82b1,U+897f,U+8eca,U+91ce,U+ac38,U+ad76,U+ae84,U+aecc,U+b07d,U+b0b1,U+b215,U+b2a0,U+b310,U+b3d7,U+b52a,U+b618,U+b775,U+b797,U+bcd5,U+bd59,U+be80,U+bea8,U+bed1,U+bee4-bee5,U+c060,U+c2ef,U+c329,U+c3dc,U+c597,U+c5bd,U+c5e5,U+c69c,U+c9d6,U+ca29,U+ca5c,U+ca84,U+cc39,U+cc3b,U+ce89,U+cee5,U+cf65,U+cf85,U+d058,U+d145,U+d22d,U+d325,U+d37d,U+d3ad,U+d769,U+ff0c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/7e13255c588b.woff2) format('woff2-variations');unicode-range:U+2161,U+2228,U+2299,U+2464,U+2517,U+2640,U+3042,U+304a,U+3053,U+3061,U+307f,U+3082,U+308c,U+3092,U+30a8,U+30ab,U+30ad,U+30b0,U+30b3,U+30b7,U+30c1,U+30c6,U+30c9,U+30d5,U+30d7,U+30de,U+30e0-30e1,U+30ec-30ed,U+4e0b,U+4e0d,U+4ee3,U+53f0,U+548c,U+5b89,U+5bb6,U+5c0f,U+611b,U+6771,U+6aa2,U+6bcd,U+6c34,U+6cd5,U+6d77,U+767d,U+795e,U+8ecd,U+9999,U+9ad8,U+ac07,U+ac1a,U+ac40,U+ad0c,U+ad88,U+ada4,U+ae01,U+ae65,U+aebd,U+aec4,U+afe8,U+b139,U+b205,U+b383,U+b38c,U+b42c,U+b461,U+b55c,U+b78f,U+b8fb,U+b9f7,U+bafc,U+bc99,U+bed8,U+bfcd,U+c0bf,U+c0f9,U+c167,U+c204,U+c20f,U+c22f,U+c258,U+c298,U+c2bc,U+c388,U+c501,U+c50c,U+c5b9,U+c5ce,U+c641,U+c648,U+c73d,U+ca50,U+ca61,U+cc4c,U+ceac,U+d0d4,U+d5f7,U+d6d7,U+ff1a}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/c4f9913a48d5.woff2) format('woff2-variations');unicode-range:U+2103,U+2463,U+25c6,U+25cb,U+266c,U+3001,U+300a,U+3046,U+304c-304d,U+304f,U+3055,U+3059,U+3063,U+3066-3068,U+306f,U+3089,U+30b8,U+30bf,U+314f,U+4e0a,U+570b,U+5730,U+5916,U+5929,U+5c71,U+5e74,U+5fc3,U+601d,U+6027,U+63d0,U+6709,U+6734,U+751f,U+7684,U+82f1,U+9053,U+91d1,U+97f3,U+ac2f,U+ac4d,U+adc4,U+ade4,U+ae41,U+ae4d-ae4e,U+aed1,U+afb9,U+b0e0,U+b299,U+b365,U+b46c,U+b480,U+b4c8,U+b7b4,U+b819,U+b918,U+baab,U+bab9,U+be8f,U+bed7,U+c0ec,U+c19f,U+c1a5,U+c3d9,U+c464,U+c53d,U+c553,U+c570,U+c5cc,U+c633,U+c6a4,U+c7a3,U+c7a6,U+c886,U+c9d9-c9da,U+c9ec,U+ca0c,U+cc21,U+cd1b,U+cd78,U+cdc4,U+cef8,U+cfe4,U+d0a5,U+d0b5,U+d0ec,U+d15d,U+d188,U+d23c,U+d2ac,U+d729,U+d79b,U+ff01,U+ff08-ff09,U+ff5c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/752563e61cc6.woff2) format('woff2-variations');unicode-range:U+2039-203a,U+223c,U+25b3,U+25b7,U+25bd,U+25cf,U+266a,U+3002,U+300b,U+304b,U+3057,U+305f,U+306a-306b,U+307e,U+308a-308b,U+3093,U+30a2,U+30af,U+30b9,U+30c3,U+30c8,U+30e9-30eb,U+33a1,U+4e00,U+524d,U+5357,U+5b50,U+7121,U+884c,U+9751,U+ac94,U+aebe,U+aecd,U+af08,U+af41,U+af49,U+b010,U+b053,U+b109,U+b11b,U+b128,U+b154,U+b291,U+b2e6,U+b301,U+b385,U+b525,U+b5b4,U+b729,U+b72f,U+b738,U+b7ff,U+b837,U+b975,U+ba67,U+bb47,U+bc1f,U+bd90,U+bfd4,U+c27c,U+c324,U+c379,U+c3e0,U+c465,U+c53b,U+c58c,U+c610,U+c653,U+c6cd,U+c813,U+c82f,U+c999,U+c9e0,U+cac4,U+cad3,U+cbd4,U+cc10,U+cc22,U+ccb8,U+ccbc,U+cda5,U+ce84,U+cea3,U+cf67,U+cfe1,U+d241,U+d30d,U+d31c,U+d391,U+d401,U+d479,U+d5c9,U+d5db,U+d649,U+d6d4}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/525ffad6efca.woff2) format('woff2-variations');unicode-range:U+b0,U+e9,U+2193,U+2462,U+260e,U+261e,U+300e-300f,U+3044,U+30a4,U+30fb-30fc,U+314d,U+5973,U+6545,U+6708,U+7537,U+ac89,U+ac9c,U+acc1,U+ad04,U+ad75,U+ad7d,U+ae45,U+ae61,U+af42,U+b0ab,U+b0af,U+b0b3,U+b12c,U+b194,U+b1a8,U+b220,U+b258,U+b284,U+b2ff,U+b315,U+b371,U+b3d4-b3d5,U+b460,U+b527,U+b534,U+b810,U+b818,U+b98e,U+ba55,U+bbac,U+bc0b,U+bc40,U+bca1,U+bccd,U+bd93,U+be54,U+be5a,U+bf08,U+bf50,U+bf55,U+bfdc,U+c0c0,U+c0d0,U+c0f4,U+c100,U+c11e,U+c170,U+c20d,U+c274,U+c290,U+c308,U+c369,U+c539,U+c587,U+c5ff,U+c6ec,U+c70c,U+c7ad,U+c7c8,U+c83c,U+c881,U+cb48,U+cc60,U+ce69,U+ce6b,U+ce75,U+cf04,U+cf08,U+cf55,U+cf70,U+cffc,U+d0b7,U+d1a8,U+d2c8,U+d384,U+d47c,U+d48b,U+d5dd,U+d5e8,U+d720,U+d759,U+f981}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/29f78634d082.woff2) format('woff2-variations');unicode-range:U+e0,U+e2,U+395,U+3b7,U+3ba,U+2460-2461,U+25a0,U+3010-3011,U+306e,U+30f3,U+314a,U+314c,U+5927,U+65b0,U+7e41,U+97d3,U+9ad4,U+ad49,U+ae0b,U+ae0d,U+ae43,U+ae5d,U+aecf,U+af3c,U+af64,U+afd4,U+b080,U+b084,U+b0c5,U+b10c,U+b1e8,U+b2ac,U+b36e,U+b451,U+b515,U+b540,U+b561,U+b6ab,U+b6b1,U+b72c,U+b730,U+b744,U+b800,U+b8ec,U+b8f0,U+b904,U+b968,U+b96d,U+b987,U+b9d9,U+bb36,U+bb49,U+bc2d,U+bc43,U+bcf6,U+bd89,U+be57,U+be61,U+bed4,U+c090,U+c130,U+c148,U+c19c,U+c2f9,U+c36c,U+c37c,U+c384,U+c3df,U+c575,U+c584,U+c660,U+c719,U+c816,U+ca4d,U+ca54,U+cabc,U+cb49,U+cc14,U+cff5,U+d004,U+d038,U+d0b4,U+d0d3,U+d0e0,U+d0ed,U+d131,U+d1b0,U+d31f,U+d33d,U+d3a0,U+d3ab,U+d514,U+d584,U+d6a1,U+d6cc,U+d749,U+d760,U+d799}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/03e9889cbdf7.woff2) format('woff2-variations');unicode-range:U+24,U+60,U+3b9,U+3bb,U+3bd,U+2191,U+2606,U+300c-300d,U+3131,U+3134,U+3139,U+3141-3142,U+3148,U+3161,U+3163,U+321c,U+4eba,U+5317,U+ac31,U+ac77,U+ac9f,U+acb9,U+acf0-acf1,U+acfd,U+ad73,U+af3d,U+b00c,U+b04a,U+b057,U+b0c4,U+b188,U+b1cc,U+b214,U+b2db,U+b2ee,U+b304,U+b4ed,U+b518,U+b5bc,U+b625,U+b69c-b69d,U+b7ac,U+b801,U+b86c,U+b959,U+b95c,U+b985,U+ba48,U+bb58,U+bc0c,U+bc38,U+bc85,U+bc9a,U+bf40,U+c068,U+c0bd,U+c0cc,U+c12f,U+c149,U+c1e0,U+c22b,U+c22d,U+c250,U+c2fc,U+c300,U+c313,U+c370,U+c3d8,U+c557,U+c580,U+c5e3,U+c62e,U+c634,U+c6f0,U+c74d,U+c783,U+c78e,U+c796,U+c7bc,U+c92c,U+ca4c,U+cc1c,U+cc54,U+cc59,U+ce04,U+cf30,U+cfc4,U+d140,U+d321,U+d38c,U+d399,U+d54f,U+d587,U+d5d0,U+d6e8,U+d770}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/c2042948f850.woff2) format('woff2-variations');unicode-range:U+d7,U+ea,U+fc,U+2192,U+25bc,U+3000,U+3137,U+3145,U+315c,U+7f8e,U+ac13,U+ac71,U+ac90,U+acb8,U+ace7,U+ad7f,U+ae50,U+aef4,U+af34,U+afbc,U+b048,U+b09a,U+b0ad,U+b0bc,U+b113,U+b125,U+b141,U+b20c,U+b2d9,U+b2ed,U+b367,U+b369,U+b374,U+b3cb,U+b4ec,U+b611,U+b760,U+b81b,U+b834,U+b8b0,U+b8e1,U+b989,U+b9d1,U+b9e1,U+b9fa,U+ba4d,U+ba78,U+bb35,U+bb54,U+bbf9,U+bc11,U+bcb3,U+bd05,U+bd95,U+bdd4,U+be10,U+bed0,U+bf51,U+c0d8,U+c232,U+c2b7,U+c2eb,U+c378,U+c500,U+c52c,U+c549,U+c568,U+c598,U+c5c9,U+c61b,U+c639,U+c67c,U+c717,U+c78a,U+c80a,U+c90c-c90d,U+c950,U+c9e7,U+cbe4,U+cca9,U+cce4,U+cdb0,U+ce78,U+ce94,U+ce98,U+cf8c,U+d018,U+d034,U+d0f1,U+d1b1,U+d280,U+d2f8,U+d338,U+d380,U+d3b4,U+d610,U+d69f,U+d6fc,U+d758}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/8046686e8a6a.woff2) format('woff2-variations');unicode-range:U+e7,U+2022,U+203b,U+25c0,U+2605,U+2661,U+3147,U+318d,U+672c,U+8a9e,U+acaa,U+acbc,U+ad1c,U+ae4a,U+ae5c,U+b044,U+b054,U+b0c8-b0c9,U+b2a6,U+b2d0,U+b35c,U+b364,U+b428,U+b454,U+b465,U+b4b7,U+b4e3,U+b51c,U+b5a1,U+b784,U+b790,U+b7ab,U+b7f4,U+b82c,U+b835,U+b8e9,U+b8f8,U+b9d8,U+b9f9,U+ba5c,U+ba64,U+babd,U+bb18,U+bb3b,U+bbff,U+bc0d,U+bc45,U+bc97,U+bcbc,U+be45,U+be75,U+be7c,U+bfcc,U+c0b6,U+c0f7,U+c14b,U+c2b4,U+c30d,U+c4f8,U+c5bb,U+c5d1,U+c5e0,U+c5ee,U+c5fd,U+c606,U+c6c5,U+c6e0,U+c708,U+c81d,U+c820,U+c824,U+c878,U+c918,U+c96c,U+c9e4,U+c9f1,U+cc2e,U+cd09,U+cea1,U+cef5,U+cef7,U+cf64,U+cf69,U+cfe8,U+d035,U+d0ac,U+d230,U+d234,U+d2f4,U+d31d,U+d575,U+d578,U+d608,U+d614,U+d718,U+d751,U+d761,U+d78c,U+d790}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/8cb32a9877aa.woff2) format('woff2-variations');unicode-range:U+2665,U+3160,U+4e2d,U+6587,U+65e5,U+ac12,U+ac14,U+ac16,U+ac81,U+ad34,U+ade0,U+ae54,U+aebc,U+af2c,U+afc0,U+afc8,U+b04c,U+b08c,U+b099,U+b0a9,U+b0ac,U+b0ae,U+b0b8,U+b123,U+b179,U+b2e5,U+b2f7,U+b4c0,U+b531,U+b538,U+b545,U+b550,U+b5a8,U+b6f0,U+b728,U+b73b,U+b7ad,U+b7ed,U+b809,U+b864,U+b86d,U+b871,U+b9bf,U+b9f5,U+ba40,U+ba4b,U+ba58,U+ba87,U+baac,U+bbc0,U+bc16,U+bc34,U+bd07,U+bd99,U+be59,U+bfd0,U+c058,U+c0e4,U+c0f5,U+c12d,U+c139,U+c228,U+c529,U+c5c7,U+c635,U+c637,U+c735,U+c77d,U+c787,U+c789,U+c8c4,U+c989,U+c98c,U+c9d0,U+c9d3,U+cc0c,U+cc99,U+cd0c,U+cd2c,U+cd98,U+cda4,U+ce59,U+ce60,U+ce6d,U+cea0,U+d0d0-d0d1,U+d0d5,U+d14d,U+d1a4,U+d29c,U+d2f1,U+d301,U+d39c,U+d3bc,U+d4e8,U+d540,U+d5ec,U+d640,U+d750}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/33d3d38864d4.woff2) format('woff2-variations');unicode-range:U+5e,U+25b2,U+25b6,U+314e,U+ac24,U+ace1,U+ace4,U+ae68,U+af2d,U+b0d0,U+b0e5,U+b150,U+b155,U+b193,U+b2c9,U+b2dd,U+b3c8,U+b3fc,U+b410,U+b458,U+b4dd,U+b5a0,U+b5a4,U+b5bb,U+b7b5,U+b838,U+b840,U+b86f,U+b8f9,U+b960,U+b9e5,U+bab8,U+bb50,U+bc1d,U+bc24-bc25,U+bca8,U+bcbd,U+bd04,U+bd10,U+bd24,U+be48,U+be5b,U+be68,U+c05c,U+c12c,U+c140,U+c15c,U+c168,U+c194,U+c219,U+c27d,U+c2a8,U+c2f1,U+c2f8,U+c368,U+c554-c555,U+c559,U+c564,U+c5d8,U+c5fc,U+c625,U+c65c,U+c6b1,U+c728,U+c794,U+c84c,U+c88c,U+c8e0,U+c8fd,U+c998,U+c9dd,U+cc0d,U+cc30,U+ceec,U+cf13,U+cf1c,U+cf5c,U+d050,U+d07c,U+d0a8,U+d134,U+d138,U+d154,U+d1f4,U+d2bc,U+d329,U+d32c,U+d3d0,U+d3f4,U+d3fc,U+d56b,U+d5cc,U+d600-d601,U+d639,U+d6c8,U+d754,U+d765}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/8dd728ab2ba1.woff2) format('woff2-variations');unicode-range:U+3c-3d,U+2026,U+24d2,U+314b,U+ac11,U+acf3,U+ad74,U+ad81,U+adf9,U+ae34,U+af43,U+afb8,U+b05d,U+b07c,U+b110,U+b118,U+b17c,U+b180,U+b18d,U+b192,U+b2cc,U+b355,U+b378,U+b4a4,U+b4ef,U+b78d,U+b799,U+b7a9,U+b7fd,U+b807,U+b80c,U+b839,U+b9b4,U+b9db,U+ba3c,U+bab0,U+bba4,U+bc94,U+be4c,U+c154,U+c1c4,U+c26c,U+c2ac,U+c2ed,U+c4f4,U+c55e,U+c561,U+c571,U+c5b5,U+c5c4,U+c654-c655,U+c695,U+c6e8,U+c6f9,U+c724,U+c751,U+c775,U+c7a0,U+c7c1,U+c874,U+c880,U+c9d5,U+c9f8,U+cabd,U+cc29,U+cc2c,U+cca8,U+ccab,U+ccd0,U+ce21,U+ce35,U+ce7c,U+ce90,U+cee8,U+cef4,U+cfe0,U+d070,U+d0b9,U+d0c1,U+d0c4,U+d0c8,U+d15c,U+d1a1,U+d2c0,U+d300,U+d314,U+d3ed,U+d478,U+d480,U+d48d,U+d508,U+d53d,U+d5e4,U+d611,U+d61c,U+d68d,U+d6a8,U+d798}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/a7ac470a3a33.woff2) format('woff2-variations');unicode-range:U+23,U+25,U+5f,U+a9,U+ac08,U+ac78,U+aca8,U+acac,U+ace8,U+ad70,U+adc0,U+addc,U+b137,U+b140,U+b208,U+b290,U+b2f5,U+b3c5,U+b3cc,U+b420,U+b429,U+b529,U+b530,U+b77d,U+b79c,U+b7a8,U+b7c9,U+b7f0,U+b7fc,U+b828,U+b860,U+b9ad,U+b9c1,U+b9c9,U+b9dd-b9de,U+b9e8,U+ba38-ba39,U+babb,U+bc00,U+bc8c,U+bca0,U+bca4,U+bcd1,U+bcfc,U+bd09,U+bdf0,U+be60,U+c0ad,U+c0b4,U+c0bc,U+c190,U+c1fc,U+c220,U+c288,U+c2b9,U+c2f6,U+c528,U+c545,U+c558,U+c5bc,U+c5d4,U+c600,U+c644,U+c6c0,U+c6c3,U+c721,U+c798,U+c7a1,U+c811,U+c838,U+c871,U+c904,U+c990,U+c9dc,U+cc38,U+cc44,U+cca0,U+cd1d,U+cd95,U+cda9,U+ce5c,U+cf00,U+cf58,U+d150,U+d22c,U+d305,U+d328,U+d37c,U+d3f0,U+d551,U+d5a5,U+d5c8,U+d5d8,U+d63c,U+d64d,U+d669,U+d734,U+d76c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/cd47f0c55f68.woff2) format('woff2-variations');unicode-range:U+26,U+2b,U+3e,U+40,U+7e,U+ac01,U+ac19,U+ac1d,U+aca0,U+aca9,U+acb0,U+ad8c,U+ae09,U+ae38,U+ae40,U+aed8,U+b09c,U+b0a0,U+b108,U+b204,U+b298,U+b2d8,U+b2eb-b2ec,U+b2f4,U+b313,U+b358,U+b450,U+b4e0,U+b54c,U+b610,U+b780,U+b78c,U+b791,U+b8e8,U+b958,U+b974,U+b984,U+b9b0,U+b9bc-b9bd,U+b9ce,U+ba70,U+bbfc,U+bc0f,U+bc15,U+bc1b,U+bc31,U+bc95,U+bcc0,U+bcc4,U+bd81,U+bd88,U+c0c8,U+c11d,U+c13c,U+c158,U+c18d,U+c1a1,U+c21c,U+c4f0,U+c54a,U+c560,U+c5b8,U+c5c8,U+c5f4,U+c628,U+c62c,U+c678,U+c6cc,U+c808,U+c810,U+c885,U+c88b,U+c900,U+c988,U+c99d,U+c9c8,U+cc3d-cc3e,U+cc45,U+cd08,U+ce20,U+cee4,U+d074,U+d0a4,U+d0dd,U+d2b9,U+d3b8,U+d3c9,U+d488,U+d544,U+d559,U+d56d,U+d588,U+d615,U+d648,U+d655,U+d658,U+d65c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/2f522f7c21e2.woff2) format('woff2-variations');unicode-range:U+d,U+7c,U+ac10,U+ac15,U+ac74,U+ac80,U+ac83,U+acc4,U+ad11,U+ad50,U+ad6d,U+adfc,U+ae00,U+ae08,U+ae4c,U+b0a8,U+b124,U+b144,U+b178,U+b274,U+b2a5,U+b2e8,U+b2f9,U+b354,U+b370,U+b418,U+b41c,U+b4f1,U+b514,U+b798,U+b808,U+b824-b825,U+b8cc,U+b978,U+b9d0,U+b9e4,U+baa9,U+bb3c,U+bc18,U+bc1c,U+bc30,U+bc84,U+bcf5,U+bcf8,U+bd84,U+be0c,U+be14,U+c0b0,U+c0c9,U+c0dd,U+c124,U+c2dd,U+c2e4,U+c2ec,U+c54c,U+c57c-c57d,U+c591,U+c5c5-c5c6,U+c5ed,U+c608,U+c640,U+c6b8,U+c6d4,U+c784,U+c7ac,U+c800-c801,U+c9c1,U+c9d1,U+cc28,U+cc98,U+cc9c,U+ccad,U+cd5c,U+cd94,U+cd9c,U+cde8,U+ce68,U+cf54,U+d0dc,U+d14c,U+d1a0,U+d1b5,U+d2f0,U+d30c,U+d310,U+d398,U+d45c,U+d50c,U+d53c,U+d560,U+d568,U+d589,U+d604,U+d6c4,U+d788}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/ff095d5c5b1a.woff2) format('woff2-variations');unicode-range:U+ac04,U+ac1c,U+ac70,U+ac8c,U+acbd,U+acf5,U+acfc,U+ad00,U+ad6c,U+adf8,U+b098,U+b0b4,U+b294,U+b2c8,U+b300,U+b3c4,U+b3d9,U+b4dc,U+b4e4,U+b77c,U+b7ec,U+b85d,U+b97c,U+b9c8,U+b9cc,U+ba54,U+ba74,U+ba85,U+baa8,U+bb34,U+bb38,U+bbf8,U+bc14,U+bc29,U+bc88,U+bcf4,U+bd80,U+be44,U+c0c1,U+c11c,U+c120,U+c131,U+c138,U+c18c,U+c218,U+c2b5,U+c2e0,U+c544,U+c548,U+c5b4,U+c5d0,U+c5ec,U+c5f0,U+c601,U+c624,U+c694,U+c6a9,U+c6b0,U+c6b4,U+c6d0,U+c704,U+c720,U+c73c,U+c740,U+c744,U+c74c,U+c758,U+c77c,U+c785,U+c788,U+c790-c791,U+c7a5,U+c804,U+c815,U+c81c,U+c870,U+c8fc,U+c911,U+c9c4,U+ccb4,U+ce58,U+ce74,U+d06c,U+d0c0,U+d130,U+d2b8,U+d3ec,U+d504,U+d55c,U+d569,U+d574,U+d638,U+d654,U+d68c}
+@font-face{font-family:'Pretendard Variable';font-style:normal;font-display:swap;font-weight:45 920;src:url(fonts/438cac2211d9.woff2) format('woff2-variations');unicode-range:U+20-22,U+27-2a,U+2c-39,U+3a-3b,U+3f,U+41-4e,U+4f-5d,U+61-7b,U+7d,U+a0-a1,U+ab,U+ad-ae,U+b7,U+bb,U+bf,U+2013-2014,U+201c-201d,U+2122,U+ac00,U+ace0,U+ae30,U+b2e4,U+b85c,U+b9ac,U+c0ac,U+c2a4,U+c2dc,U+c774,U+c778,U+c9c0,U+d558}
+@font-face{font-family:'Paperlogy';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/6d23ab3153fe.woff2) format('woff2')}
+@font-face{font-family:'Paperlogy';font-style:normal;font-weight:800;font-display:swap;src:url(fonts/80bd2d861d3a.woff2) format('woff2')}
+</style>
+<style>
+/* 레이아웃: 옆으로 넘기는 세로 카드뉴스 6장. 카드는 9:16 한 장짜리 그림처럼 통째로 커지고 줄어듦(글자 크기도 카드 폭에 맞춰 함께), 카드 안 스크롤 없음
+   3번 카드만 줄을 누르면 그 강의로 온 실제 질문이 카드 위로 올라옴
+   색: 딸기우유. 우유빛 흰색 바탕, 딸기 핑크의 농담, 글자는 짙은 베리색
+   움직이는 것은 표지와 마지막 장뿐: 구름 바다 배경, 마지막 장의 감사 문장과 올라오는 한마디 */
+:root {
+  color-scheme: light;
+  --page: #ffe6ec;
+  --milk: #fff9f7;
+  --pink-50: #fff0f3;
+  --pink-100: #ffe1e8;
+  --pink-200: #ffc9d6;
+  --pink-300: #ffa3ba;
+  --berry: #ee4c80;
+  --berry-deep: #c12a60;
+  --ink: #4b1f2e;
+  --muted: #94606f;
+  --display: "Paperlogy", "Pretendard Variable", Pretendard, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+  --body: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+  --cw: min(calc(100vw - 44px), 430px);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; }
+body { background: linear-gradient(180deg, #fff1f4 0%, var(--page) 55%, #ffd3de 100%) fixed var(--page); color: var(--ink); font: 400 15px/1.5 var(--body); -webkit-font-smoothing: antialiased; overflow: hidden; }
+h1, h2, h3, p, ol, ul { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+button { font: inherit; color: inherit; border: 0; background: none; padding: 0; cursor: pointer; text-align: inherit; }
+:focus-visible { outline: 2px solid var(--berry-deep); outline-offset: 2px; }
+
+.app { height: 100%; display: flex; flex-direction: column; }
+.bar { flex: none; display: flex; align-items: center; justify-content: space-between; padding: 10px 22px 6px; font-size: 13px; }
+.brand { font-family: var(--display); font-weight: 800; letter-spacing: .02em; color: var(--berry-deep); }
+.pager { color: var(--muted); font-variant-numeric: tabular-nums; }
+.pager b { color: var(--ink); font-weight: 700; }
+
+/* 카드 줄: 한 장씩 가운데에 멈춤. 옆 장이 살짝 보여서 넘길 수 있다는 걸 알려 줌 */
+.deck { flex: 1; min-height: 0; display: flex; align-items: center; gap: 14px; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; padding-inline: calc((100% - var(--cw)) / 2); scrollbar-width: none; }
+.deck::-webkit-scrollbar { display: none; }
+.card { flex: none; width: var(--cw); height: calc(var(--cw) * 16 / 9); position: relative; overflow: hidden; scroll-snap-align: center; scroll-snap-stop: always; container-type: size; border-radius: calc(var(--cw) * .075); background: var(--milk); box-shadow: 0 calc(var(--cw) * .03) calc(var(--cw) * .09) -18px rgba(193, 42, 96, .45); }
+
+/* 카드 안: 모든 크기를 카드 폭(cqw)으로 */
+.face { position: absolute; inset: 0; display: flex; flex-direction: column; padding: 8.5cqw 7.5cqw 7.5cqw; gap: 4cqw; }
+.live { position: absolute; inset: 0; }
+.live > div { width: 100%; height: 100%; }
+.tint-a { background: radial-gradient(90cqw 70cqw at 105% -8%, var(--pink-200) 0%, rgba(255, 201, 214, 0) 62%), var(--milk); }
+.tint-b { background: radial-gradient(80cqw 60cqw at -12% 104%, #ffd9e2 0%, rgba(255, 217, 226, 0) 64%), var(--pink-100); }
+.tint-c { background: radial-gradient(90cqw 70cqw at -10% -6%, var(--pink-200) 0%, rgba(255, 201, 214, 0) 60%), var(--milk); }
+.tint-d { background: radial-gradient(90cqw 80cqw at 108% 100%, #ffd0db 0%, rgba(255, 208, 219, 0) 62%), var(--pink-50); }
+
+.eyebrow { display: inline-flex; align-self: flex-start; align-items: center; height: 6.4cqw; padding: 0 3cqw; border-radius: 99cqw; background: var(--berry); color: #fff; font: 800 3.1cqw/1 var(--display); letter-spacing: .01em; white-space: nowrap; }
+.title { font: 800 8.1cqw/1.24 var(--display); letter-spacing: -.035em; word-break: keep-all; color: var(--ink); }
+.title em { font-style: normal; color: var(--berry-deep); }
+.sub { font-size: 3.55cqw; line-height: 1.55; color: var(--muted); word-break: keep-all; }
+.sub b { color: var(--ink); font-weight: 700; }
+.fine { font-size: 2.85cqw; line-height: 1.5; color: var(--muted); word-break: keep-all; }
+.head { display: flex; flex-direction: column; gap: 2.6cqw; }
+.push { margin-top: auto; }
+.fill { flex: 1; min-height: 0; }
+
+/* 유리 판 (표지·마지막 장) */
+.glass { border-radius: 5.5cqw; background: rgba(255, 255, 255, .6); border: 1px solid rgba(255, 255, 255, .8); -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3); padding: 4.6cqw 5cqw; }
+
+/* 표지 */
+.cover .title { font-size: 9cqw; line-height: 1.22; }
+.three { display: flex; flex-direction: column; gap: 2.6cqw; }
+.three h3 { font: 800 3.5cqw/1.3 var(--display); color: var(--berry-deep); }
+.three ol { display: flex; flex-direction: column; gap: 1.6cqw; }
+.three li { display: grid; grid-template-columns: 5.6cqw minmax(0, 1fr); gap: 2.4cqw; align-items: baseline; font-size: 3.5cqw; line-height: 1.5; word-break: keep-all; }
+.three li b { display: grid; place-items: center; width: 5.6cqw; height: 5.6cqw; border-radius: 50%; background: var(--berry); color: #fff; font: 800 3cqw/1 var(--display); transform: translateY(.9cqw); }
+.swipe { text-align: center; font-size: 3cqw; color: var(--berry-deep); font-weight: 600; }
+
+/* 낱말 구름: 딸기 한 가지 색의 농담 */
+.cloud { display: block; width: 100%; height: auto; }
+.cloud text { font-family: "Paperlogy", "Pretendard Variable", sans-serif; text-anchor: middle; letter-spacing: -.02em; }
+.cloud .t0 { fill: #a81d4e; }
+.cloud .t1 { fill: #d93470; }
+.cloud .t2 { fill: #e4547f; }
+.cloud .t3 { fill: #d96d90; }
+.cloud .t4 { fill: #cf859f; }
+.best { display: flex; flex-direction: column; gap: 1.8cqw; }
+.best li { display: flex; align-items: center; justify-content: space-between; gap: 3cqw; padding: 2.5cqw 4cqw; border-radius: 3.6cqw; background: var(--pink-50); font-size: 3.5cqw; font-weight: 600; word-break: keep-all; }
+.best li span { font: 800 3.5cqw/1 var(--display); color: var(--berry-deep); white-space: nowrap; font-variant-numeric: tabular-nums; }
+
+/* 질문 → 강의. 줄을 누르면 실제 질문이 올라옴 */
+.match { display: flex; flex-direction: column; gap: 2cqw; }
+.match button { display: grid; grid-template-columns: 11cqw minmax(0, 1fr) auto 3cqw; gap: 3cqw; align-items: center; width: 100%; padding: 2.5cqw 3.4cqw 2.5cqw 2.5cqw; border-radius: 4.2cqw; background: #fff; }
+.match button:active { background: var(--pink-50); }
+.who { display: grid; place-items: center; width: 11cqw; height: 11cqw; border-radius: 3.4cqw; background: var(--berry); color: #fff; font: 800 3.7cqw/1 var(--display); flex: none; }
+.who.ops { background: var(--pink-200); color: var(--berry-deep); font-size: 2.9cqw; }
+.match .what { display: block; min-width: 0; }
+.match .what b { display: block; font-size: 3.75cqw; font-weight: 700; line-height: 1.35; letter-spacing: -.02em; word-break: keep-all; }
+.match .what small { display: block; font-size: 2.95cqw; line-height: 1.4; color: var(--muted); }
+.match .n { font: 800 3.5cqw/1 var(--display); color: var(--berry-deep); white-space: nowrap; }
+.match .go { font-size: 4cqw; line-height: 1; color: var(--pink-300); }
+
+.sheet { position: absolute; inset: 0; z-index: 2; display: flex; flex-direction: column; gap: 3.6cqw; padding: 8.5cqw 7.5cqw 7.5cqw; background: var(--milk); animation: rise .22s ease-out; }
+@keyframes rise { from { transform: translateY(8%); opacity: 0; } to { transform: none; opacity: 1; } }
+.sheet-head { display: grid; grid-template-columns: 11cqw minmax(0, 1fr) 9cqw; gap: 3cqw; align-items: center; }
+.sheet-head h3 { font: 800 4.8cqw/1.25 var(--display); letter-spacing: -.03em; word-break: keep-all; }
+.sheet-head p { font-size: 3cqw; color: var(--muted); }
+.sheet-close { display: grid; place-items: center; width: 9cqw; height: 9cqw; border-radius: 50%; background: var(--pink-100); color: var(--berry-deep); font-size: 5cqw; line-height: 1; }
+.asks { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 2.2cqw; }
+.asks li { padding: 3.2cqw 4cqw; border-radius: 4.2cqw; background: var(--pink-50); }
+.asks small { display: block; margin-bottom: .8cqw; font: 800 2.7cqw/1.3 var(--display); color: var(--berry-deep); }
+.asks p { font-size: 3.5cqw; line-height: 1.55; word-break: keep-all; overflow-wrap: anywhere; }
+.asks q, .tips q, .needs q { quotes: "“" "”"; }
+
+/* 잘 따라올 수 있었던 이유 네 가지 */
+.tips { display: flex; flex-direction: column; justify-content: space-between; gap: 2cqw; padding-top: 2cqw; }
+.tips li { display: grid; grid-template-columns: 8cqw minmax(0, 1fr); column-gap: 3cqw; row-gap: 1cqw; }
+.tips .no { grid-row: 1 / span 3; font: 800 8.6cqw/1 var(--display); color: var(--pink-300); letter-spacing: -.04em; }
+.tips h3 { font-size: 4.6cqw; font-weight: 700; line-height: 1.3; letter-spacing: -.025em; word-break: keep-all; }
+.tips p { font-size: 3.3cqw; line-height: 1.5; color: var(--muted); word-break: keep-all; }
+.tips .so { color: var(--ink); font-weight: 600; }
+
+/* 바라는 것 네 칸 */
+.needs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; gap: 2.6cqw; }
+.needs li { display: flex; flex-direction: column; gap: 2.2cqw; padding: 4.6cqw 4cqw; border-radius: 4.6cqw; background: #fff; min-width: 0; }
+.needs h3 { font: 800 4.6cqw/1.25 var(--display); letter-spacing: -.03em; color: var(--berry-deep); word-break: keep-all; }
+.needs p { font-size: 3.3cqw; line-height: 1.55; color: var(--muted); word-break: keep-all; }
+.needs .so { margin-top: auto; padding-top: 1.4cqw; color: var(--ink); font-weight: 700; font-size: 3.35cqw; }
+
+/* 마지막 장: 위는 감사 문장, 아래는 계속 올라오는 한마디 */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.thanks { width: 100%; }
+.stream { position: relative; overflow: hidden; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 88%, transparent 100%); mask-image: linear-gradient(180deg, transparent 0, #000 14%, #000 88%, transparent 100%); }
+.stream ul { display: flex; flex-direction: column; gap: 2.4cqw; padding-bottom: 2.4cqw; }
+.stream .run { animation: pour 30s linear infinite; }
+@keyframes pour { from { transform: translateY(0); } to { transform: translateY(-50%); } }
+.stream li { align-self: flex-start; max-width: 88%; padding: 2.6cqw 4cqw; border-radius: 4.6cqw 4.6cqw 4.6cqw 1.2cqw; font-size: 3.5cqw; line-height: 1.45; font-weight: 600; word-break: keep-all; background: rgba(255, 255, 255, .78); border: 1px solid rgba(255, 255, 255, .9); }
+.stream li:nth-child(even) { align-self: flex-end; border-radius: 4.6cqw 4.6cqw 1.2cqw 4.6cqw; }
+.stream small { display: block; margin-bottom: .4cqw; font: 800 2.6cqw/1.3 var(--display); color: var(--berry-deep); }
+.stream q { quotes: "“" "”"; }
+
+/* 아래: 화살표와 점 */
+.dots { flex: none; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 4px 16px 10px; }
+.dots .arrow { width: 38px; height: 38px; border-radius: 50%; background: rgba(255, 255, 255, .8); display: grid; place-items: center; font-size: 18px; line-height: 1; color: var(--berry-deep); }
+.dots .arrow:disabled { opacity: .35; cursor: default; }
+.dotrow { display: flex; align-items: center; }
+.dotrow button { width: 20px; height: 38px; display: grid; place-items: center; }
+.dotrow button::after { content: ""; width: 6px; height: 6px; border-radius: 3px; background: var(--pink-300); transition: width .2s, background .2s; }
+.dotrow button[aria-current="true"]::after { width: 18px; background: var(--berry); }
+@media (prefers-reduced-motion: reduce) { .dotrow button::after { transition: none; } .sheet { animation: none; } .stream .run { animation: none; } }
+</style>
+
+<div class="app">
+  <header class="bar">
+    <span class="brand">JUST VUILD 온보딩</span>
+    <span class="pager" aria-hidden="true"><b id="now">1</b> / 6</span>
+  </header>
+
+  <main class="deck" id="deck" tabindex="0" aria-label="1·2강 서술형 응답 정리 카드뉴스 6장. 옆으로 넘겨 보세요">
+
+    <!-- 1. 표지 -->
+    <section class="card cover" aria-label="1장 표지">
+      <div class="live"><div id="st-cover" role="img" aria-label="딸기우유빛 구름 바다"></div></div>
+      <div class="face">
+        <p class="eyebrow">다음 강의를 준비하는 강사님께</p>
+        <h1 class="title">1·2강 선생님들이<br>남겨 주신 말을<br><em>정리했어요</em></h1>
+        <div class="glass three push">
+          <h3>먼저 세 줄 요약</h3>
+          <ol>
+            <li><b>1</b><span>새 도구를 함께 따라 해 보는 실습에 칭찬이 가장 많았어요.</span></li>
+            <li><b>2</b><span>질문 17개는 남은 강의 주제와 많이 겹쳐요. 강의별 질문은 3번 카드에 있습니다.</span></li>
+            <li><b>3</b><span>처음인 분도 함께 듣고 있어서, 중간에 한 번씩 기다려 주시면 좋아요.</span></li>
+          </ol>
+        </div>
+        <p class="swipe">서술형 답변 178개 · 옆으로 넘겨 보세요 →</p>
+      </div>
+    </section>
+
+    <!-- 2. 좋았던 것 -->
+    <section class="card" aria-label="2장 좋았던 것">
+      <div class="face tint-a">
+        <div class="head">
+          <p class="eyebrow">좋았던 것</p>
+          <h2 class="title">가장 많이 나온 말은<br><em>‘감사’</em>였어요</h2>
+          <p class="sub">응답 79건 가운데 <b>47건</b>에 감사 인사가 담겨 있었어요. 글자가 클수록 많이 나온 말입니다.</p>
+        </div>
+        <svg class="cloud" viewBox="-501 -430 1010 861" role="img" aria-label="많이 나온 말: 감사, 러버블, 크래프트, 안티그라비티, 친절, 자세한 설명, 바이브코딩, 학급경영, API, IDE, 강의자료, 새로운 도구"><text class="t0" x="-131" y="99" font-size="178" font-weight="800">감사</text><text class="t1" x="220" y="115" font-size="144" font-weight="800">러버블</text><text class="t1" x="-1" y="-121" font-size="121" font-weight="800">크래프트</text><text class="t1" x="167" y="-239" font-size="113" font-weight="800">안티그라비티</text><text class="t2" x="103" y="-24" font-size="82" font-weight="800">친절</text><text class="t2" x="221" y="198" font-size="76" font-weight="800">자세한 설명</text><text class="t2" x="184" y="-350" font-size="76" font-weight="800">바이브코딩</text><text class="t2" x="-115" y="182" font-size="73" font-weight="800">학급경영</text><text class="t2" x="264" y="-19" font-size="73" font-weight="800">API</text><text class="t2" x="-290" y="-64" font-size="61" font-weight="600">IDE</text><text class="t3" x="-76" y="251" font-size="61" font-weight="600">강의자료</text><text class="t3" x="-37" y="319" font-size="61" font-weight="600">새로운 도구</text><text class="t3" x="283" y="-101" font-size="61" font-weight="600">연동</text><text class="t3" x="-314" y="251" font-size="60" font-weight="600">카훗 퀴즈</text><text class="t3" x="-329" y="177" font-size="56" font-weight="600">깃허브</text><text class="t3" x="-202" y="-235" font-size="56" font-weight="600">처음</text><text class="t3" x="296" y="261" font-size="53" font-weight="600">고생 많으셨어요</text><text class="t3" x="-38" y="-62" font-size="50" font-weight="600">배포</text><text class="t3" x="-331" y="106" font-size="49" font-weight="600">재미</text><text class="t3" x="-342" y="-139" font-size="46" font-weight="600">깔끔한 설명</text><text class="t4" x="-41" y="376" font-size="46" font-weight="600">그로우포인트</text><text class="t4" x="-235" y="-305" font-size="46" font-weight="600">주식 웹앱</text><text class="t4" x="227" y="317" font-size="46" font-weight="600">참여형</text><text class="t4" x="-90" y="-361" font-size="46" font-weight="600">교사 계정</text><text class="t4" x="-379" y="-216" font-size="46" font-weight="600">토큰 아끼기</text><text class="t4" x="273" y="-173" font-size="41" font-weight="600">최고</text><text class="t4" x="364" y="-177" font-size="41" font-weight="600">쉽게</text><text class="t4" x="419" y="-61" font-size="37" font-weight="600">질문 답변</text><text class="t4" x="406" y="-109" font-size="34" font-weight="600">학급 앱</text><text class="t4" x="-142" y="-78" font-size="34" font-weight="600">자신감</text><text class="t4" x="-224" y="-360" font-size="33" font-weight="600">유익</text><text class="t4" x="405" y="-20" font-size="28" font-weight="600">PRD</text><text class="t4" x="-338" y="-25" font-size="28" font-weight="600">책임감</text><text class="t4" x="-380" y="36" font-size="28" font-weight="600">코덱스·클로드</text><text class="t4" x="442" y="-166" font-size="24" font-weight="600">사례</text></svg>
+        <ul class="best push" aria-label="칭찬이 많았던 세 가지">
+          <li>처음 보는 도구를 만났을 때<span>36건</span></li>
+          <li>차근차근 기다려 주실 때<span>27건</span></li>
+          <li>내 교실에 쓸 수 있겠다 싶을 때<span>12건</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 3. 궁금한 것 -->
+    <section class="card" aria-label="3장 궁금한 것">
+      <div class="face tint-b">
+        <div class="head">
+          <p class="eyebrow">궁금한 것</p>
+          <h2 class="title">질문 17개를<br><em>강의별로</em> 나눠 봤어요</h2>
+          <p class="sub">남은 강의 주제와 많이 겹쳤어요. <b>줄을 누르면 실제 질문이 보입니다.</b></p>
+        </div>
+        <ul class="match push">
+          <li><button type="button" data-q="3"><span class="who">3강</span><span class="what"><b>고친 뒤 다시 올리는 흐름</b><small>클로드코드와 깃허브</small></span><span class="n">4건</span><span class="go" aria-hidden="true">›</span></button></li>
+          <li><button type="button" data-q="4"><span class="who">4강</span><span class="what"><b>화면을 예쁘게 만드는 법</b><small>컴포넌트와 에셋</small></span><span class="n">1건</span><span class="go" aria-hidden="true">›</span></button></li>
+          <li><button type="button" data-q="5"><span class="who">5강</span><span class="what"><b>교실 사례가 만들어진 과정</b><small>교실의 아이디어를 현실로</small></span><span class="n">6건</span><span class="go" aria-hidden="true">›</span></button></li>
+          <li><button type="button" data-q="6"><span class="who">6강</span><span class="what"><b>API, MCP 같은 확장</b><small>데이터, API, AI</small></span><span class="n">2건</span><span class="go" aria-hidden="true">›</span></button></li>
+          <li><button type="button" data-q="7"><span class="who">7강</span><span class="what"><b>무엇부터 생각하고 시작하는지</b><small>서비스 개발 방법론</small></span><span class="n">3건</span><span class="go" aria-hidden="true">›</span></button></li>
+          <li><button type="button" data-q="ops"><span class="who ops">운영진</span><span class="what"><b>학생 개인정보</b><small>운영진이 따로 안내</small></span><span class="n">1건</span><span class="go" aria-hidden="true">›</span></button></li>
+        </ul>
+        <p class="fine">강의 제목을 보고 나눈 것이라 실제 강의 계획과 다를 수 있어요.</p>
+      </div>
+      <div class="sheet" id="sheet" role="dialog" aria-labelledby="sheet-title" hidden>
+        <div class="sheet-head">
+          <span class="who" id="sheet-who"></span>
+          <div><h3 id="sheet-title"></h3><p id="sheet-sub"></p></div>
+          <button type="button" class="sheet-close" id="sheet-close" aria-label="질문 닫기">×</button>
+        </div>
+        <ul class="asks" id="sheet-list"></ul>
+        <p class="fine">응답 원문 그대로입니다. ‘요약’ 표시가 있는 것만 뜻을 줄여 옮겼어요.</p>
+      </div>
+    </section>
+
+    <!-- 4. 강의할 때 챙길 것 -->
+    <section class="card" aria-label="4장 강의할 때 챙길 것">
+      <div class="face tint-c">
+        <div class="head">
+          <p class="eyebrow">강의할 때 챙길 것</p>
+          <h2 class="title">잘 따라올 수 있었던<br><em>이유 네 가지</em></h2>
+          <p class="sub">따라가기 좋았다는 답변에서 공통으로 나온 것들이에요.</p>
+        </div>
+        <ol class="tips fill">
+          <li><span class="no">1</span><h3>중간중간 기다려 주기</h3>
+            <p><q data-src="2">따라가기 편하게 기다려주셔서 여유롭게 따라갈 수 있었습니다.</q></p>
+            <p class="so">처음인 분과 자주 쓰는 분이 함께 듣고 있어요.</p></li>
+          <li><span class="no">2</span><h3>순서가 보이는 자료</h3>
+            <p><q data-src="1">강의자료가 체계적으로 준비되어 있어 이해하기 쉬웠어요.</q></p>
+            <p class="so">단계에 번호가 있으면 혼자서도 다시 해 볼 수 있어요.</p></li>
+          <li><span class="no">3</span><h3>끝나는 시각 미리 알리기</h3>
+            <p><q data-src="1">평일 저녁에 컴팩트하게 운영되면 좋을 것 같아요!</q></p>
+            <p class="so">시간에 대한 의견이 4건 있었어요. 중간에 5분 쉬어 가도 좋습니다.</p></li>
+          <li><span class="no">4</span><h3>다시보기와 자료</h3>
+            <p><q data-src="1">녹화본이 있어야 하나하나 따라하기 좋을듯해요</q></p>
+            <p class="so">요청이 5건 있었어요. 녹화와 당일 알림은 운영진이 준비할게요.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 5. 바라는 것 -->
+    <section class="card" aria-label="5장 바라는 것">
+      <div class="face tint-d">
+        <div class="head">
+          <p class="eyebrow">바라는 것</p>
+          <h2 class="title">내 교실에서<br><em>혼자서도</em> 해 보고 싶다</h2>
+          <p class="sub">질문과 요청을 모아 보면 네 가지로 정리돼요.</p>
+        </div>
+        <ul class="needs fill">
+          <li><h3>내 교실에 바로</h3>
+            <p><q data-src="2">나만의 교실 관리 웹 앱을 만들어보면 재밌을 것 같다.</q></p>
+            <p class="so">→ 예시는 학급 장면으로</p></li>
+          <li><h3>혼자서 다시</h3>
+            <p><q data-src="2">순서가 정리된 강의안을 받아 실습 연습을 해보고 싶습니다!</q></p>
+            <p class="so">→ 따라 할 순서 남겨 주기</p></li>
+          <li><h3>만든 다음까지</h3>
+            <p><q data-src="1">만들고 &gt; 저장하고 &gt; 배포하고 &gt; 이후 관리하고.. 결국 이 흐름 같은데요.</q></p>
+            <p class="so">→ 한 바퀴 끝까지 보여 주기</p></li>
+          <li><h3>생각하는 순서</h3>
+            <p><q data-src="2">프로그램 개발 계획 짜는 사고과정이 궁금합니다</q></p>
+            <p class="so">→ 프롬프트 전에 무엇을 정하는지</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. 고맙습니다 -->
+    <section class="card last" aria-label="6장 고맙습니다">
+      <div class="live"><div id="st-last" role="img" aria-label="딸기우유빛 구름 바다"></div></div>
+      <div class="face">
+        <p class="eyebrow">강사님께 온 한마디 53개</p>
+        <h2 class="sr">첫 주를 든든하게 열어 주셔서 고맙습니다</h2>
+        <div class="thanks" id="st-thanks" aria-hidden="true"></div>
+        <div class="stream fill" aria-label="선생님들이 강사님께 남긴 한마디">
+<ul class="run"><li><small>1강을 들은 선생님</small><q>차근차근 알려주셔서 정말 감사드립니다!!</q></li><li><small>2강을 들은 선생님</small><q>참여형 연수 너무 재밌었어용</q></li><li><small>1강을 들은 선생님</small><q>많은 질문에도 하나씩 친절하게 답해주셔서 정말 감사해요^^</q></li><li><small>2강을 들은 선생님</small><q>따라가기 편하게 기다려주셔서 여유롭게 따라갈 수 있었습니다.</q></li><li><small>1강을 들은 선생님</small><q>연수 진행이 너무 매끄러웠습니다. 감사합니다.</q></li><li><small>2강을 들은 선생님</small><q>제가 해보고 싶던 내용을 간단한 방식으로 잘 알려주셔서 감사합니다!</q></li><li><small>1강을 들은 선생님</small><q>자료 너무 좋았고 정말 따라가기 쉽게 체계적이었습니다.</q></li><li><small>2강을 들은 선생님</small><q>좋은 학급 관리 사례를 알 수 있었습니다. 정말 대단하세요..! 감사합니다.</q></li><li><small>1강을 들은 선생님</small><q>마치 된 것 같아 개발자🕶</q></li><li><small>2강을 들은 선생님</small><q>오늘 연수 넘 재미있게 해주셔서 감사합니다 ^^</q></li><li><small>1강을 들은 선생님</small><q>오늘 넘 고생많으셨습니다. 친절한 설명 최고!</q></li><li><small>2강을 들은 선생님</small><q>최고예요</q></li><li><small>1강을 들은 선생님</small><q>유익한 강의를 쉽게 가르쳐 주셔서 감사합니다.^^</q></li><li><small>2강을 들은 선생님</small><q>좋은 앱 소개해주셔서 감사합니다!</q></li><li><small>1강을 들은 선생님</small><q>열정적으로 강의해주셔서 감사합니다.</q></li><li><small>2강을 들은 선생님</small><q>친절하셔서 좋았습니다.</q></li><li><small>1강을 들은 선생님</small><q>긴 시간 친절하게 안내해주셔서 감사합니다.</q></li><li><small>2강을 들은 선생님</small><q>잘 배웠습니다. 감사합니다!^^</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>차근차근 알려주셔서 정말 감사드립니다!!</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>참여형 연수 너무 재밌었어용</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>많은 질문에도 하나씩 친절하게 답해주셔서 정말 감사해요^^</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>따라가기 편하게 기다려주셔서 여유롭게 따라갈 수 있었습니다.</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>연수 진행이 너무 매끄러웠습니다. 감사합니다.</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>제가 해보고 싶던 내용을 간단한 방식으로 잘 알려주셔서 감사합니다!</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>자료 너무 좋았고 정말 따라가기 쉽게 체계적이었습니다.</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>좋은 학급 관리 사례를 알 수 있었습니다. 정말 대단하세요..! 감사합니다.</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>마치 된 것 같아 개발자🕶</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>오늘 연수 넘 재미있게 해주셔서 감사합니다 ^^</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>오늘 넘 고생많으셨습니다. 친절한 설명 최고!</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>최고예요</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>유익한 강의를 쉽게 가르쳐 주셔서 감사합니다.^^</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>좋은 앱 소개해주셔서 감사합니다!</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>열정적으로 강의해주셔서 감사합니다.</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>친절하셔서 좋았습니다.</q></li><li aria-hidden="true"><small>1강을 들은 선생님</small><q>긴 시간 친절하게 안내해주셔서 감사합니다.</q></li><li aria-hidden="true"><small>2강을 들은 선생님</small><q>잘 배웠습니다. 감사합니다!^^</q></li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="dots" aria-label="카드 넘기기">
+    <button type="button" class="arrow" id="prev" aria-label="이전 장">‹</button>
+    <div class="dotrow" id="dotrow"></div>
+    <button type="button" class="arrow" id="next" aria-label="다음 장">›</button>
+  </nav>
+</div>
+
+<script>
+/* =====================================================================
+   아래 qmEngine, 배경 '새벽 구름 바다', 글자 모션 '블러 인'은 쿼카 모션랩(QUOKA MOTION LAB)에서 가져온 코드입니다.
+   구름 바다는 색만 딸기우유 핑크로 바꿨고, 블러 인은 문장과 글꼴·크기만 이 화면에 맞췄습니다.
+   ===================================================================== */
+function qmEngine(root, CFG, motion) {
+  // 색 8개: 가장 밝은 색 → 가장 진한 색. [0] 흰 판·밝은 글자, [1]~[4] 연한 색에서 중간 색, [5] 포인트 색, [6] 둘째 포인트 색, [7] 글자색
+  // 바꾸려면 CONFIG에 colors: ['#...', ...] 를 같은 순서로 넣으면 됩니다. 비워 두면 흰색·네이비 계열이 쓰입니다
+  const COLORS = CFG.colors || ['#ffffff', '#e8ecf3', '#cfd7e6', '#9aa8c4', '#5c7099', '#1f3460', '#6e1a2f', '#15171c'];
+  // 매번 같은 순서가 나오는 난수 (같은 seed면 같은 결과)
+  const rand = seed => () => (seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296;
+  // 샘플 그림: CONFIG.images가 비어 있을 때 쓰입니다. 어느 카드에 어떤 그림이 갈지는 열 때마다 섞입니다
+  const dice = rand(CFG.seed || Math.floor(Math.random() * 1e9) + 1);
+  const shift = Math.floor(dice() * 16);
+  const FONT = '"Pretendard Variable","Pretendard","Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",system-ui,sans-serif';
+  // 색의 밝기 (0 = 검정, 255 = 흰색). #rrggbb 꼴이 아니면 검정으로 봅니다
+  const light = color => /^#[0-9a-f]{6}$/i.test(color) ? (parseInt(color.slice(1, 3), 16) * 299 + parseInt(color.slice(3, 5), 16) * 587 + parseInt(color.slice(5, 7), 16) * 114) / 1000 : 0;
+  const bright = light(CFG.bg);
+  const still = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let frame = null, time = CFG.startAt || (still ? 4 : 0), last = 0, raf = 0, timer = 0, size = '';
+  let playing = false, seen = true, want = CFG.autoplay !== false && !still, drew = false;
+  // 랜딩페이지용: 실제 마우스·스크롤에 반응합니다 (CONFIG.live). true = 페이지에 붙여 쓸 때, 'try' = 미리보기 창(마우스가 없으면 연출대로)
+  const LIVE = CFG.live === true || CFG.live === 'try', TRY = CFG.live === 'try';
+  const live = { x: 0, y: 0, tx: 0, ty: 0, over: 0, on: false, down: 0, press: false, s: 0, ts: 0, ready: false };
+
+  const api = {
+    root: root,
+    bg: CFG.bg,
+    clear: CFG.bg === 'transparent',              // 투명 배경으로 그리는 중 (영상 편집기에 얹을 자막 등). 이때는 화면 전체를 칠하는 바탕을 그리지 않습니다
+    fg: bright > 150 ? COLORS[7] : COLORS[0],     // 배경 위에 바로 쓰는 글자색
+    ink: COLORS[7],                               // 흰 판 위에 쓰는 글자색
+    accent: COLORS[5],                            // 포인트 색
+    deep: COLORS[6],                              // 둘째 포인트 색
+    on: color => light(color) > 150 ? COLORS[7] : '#ffffff',   // 그 색 위에 올릴 글자색 (밝은 색 위엔 진한 글자, 진한 색 위엔 흰 글자)
+    tone: i => COLORS[1 + (i % 5 + 5) % 5],       // i번째 변주 색 (연한 색 ~ 포인트 색)
+    rand: rand,
+    font: FONT,
+    ko: text => /[\u3131-\u318e\uac00-\ud7a3]/.test(text),   // 한글이 들어 있나 (한글이 든 글줄은 한글 글꼴 하나로 씁니다)
+    count: (CFG.images || []).length,             // 넣은 이미지 수 (0이면 샘플)
+    words: CFG.words || [],                       // 넣은 낱말 (글자 모션에서 사용, 비면 기본 낱말)
+    live: LIVE && !TRY,                           // 실제 페이지에서 마우스·스크롤에 반응하는 중 (미리보기 칸·영상 저장 때는 false)
+    // 마우스 자리 { x, y: 무대 안의 px, down: 누름 0~1, on: 마우스가 와 있는 정도 0~1, fake: 연출용 가짜 커서를 보일 정도 0~1 }
+    // demo: 미리보기·영상 저장 때 쓸 연출 자리 { x, y, down, on } (t로 계산해서 넘김). 실제 페이지에서는 진짜 마우스를 따라갑니다
+    pointer(demo) {
+      const d = Object.assign({ x: api.W / 2, y: api.H / 2, down: 0, on: 1 }, demo || {});
+      if (!LIVE) return { x: d.x, y: d.y, down: d.down, on: d.on, fake: 1 };
+      if (!live.ready) return TRY ? { x: d.x, y: d.y, down: d.down, on: d.on, fake: 1 } : { x: d.x, y: d.y, down: 0, on: 0, fake: 0 };
+      const k = TRY ? live.over : 1, mix = (a, b) => a + (b - a) * k;
+      return { x: mix(d.x, live.x), y: mix(d.y, live.y), down: mix(d.down, live.down), on: TRY ? mix(d.on, live.over) : live.over, fake: 1 - k };
+    },
+    // 스크롤 진행 0~1. 미리보기·영상 저장 때는 demo(t로 계산한 값), 실제 페이지에서는 이 상자(또는 CONFIG.track의 칸)가 화면을 지나는 정도
+    scroll: demo => LIVE && !TRY ? live.s : demo,
+    image: i => { const n = (CFG.images || []).length; return n ? CFG.images[i % n] : null; },   // i번째 이미지 주소 (없으면 null)
+    // i번째 샘플 그림 { cv, url }. 코드에 qmArt가 함께 들어 있을 때만 나옵니다 (plain: 글자 없는 그림만)
+    art: (i, plain) => { drew = true; return typeof qmArt === 'function' ? qmArt(plain ? i : i + shift, plain) : null; },
+    // i번째 그림을 CSS background 값으로: 내 이미지가 있으면 이미지, 없으면 샘플 그림
+    paint: i => {
+      const n = (CFG.images || []).length, a = n ? null : api.art(i);
+      return n ? `url("${CFG.images[i % n]}") center / cover no-repeat, #1c1c1e` : a ? `url(${a.url}) center / cover no-repeat` : `linear-gradient(145deg, ${COLORS[2]}, ${COLORS[5]})`;
+    },
+    // 숏폼 자막용 미리보기 바탕: 영상 대신 깔아 두는 흐릿한 장면 (내 이미지를 넣으면 그 그림). 투명 배경일 때는 그리지 않고 null을 돌려줍니다
+    footage(dim) {
+      if (api.clear) return null;
+      const el = document.createElement('div'), n = (CFG.images || []).length;
+      el.style.cssText = 'position:absolute;left:0;top:0;width:100%;height:100%;filter:brightness(' + (dim == null ? 0.85 : dim) + ');background:' + (n ? `url("${CFG.images[0]}") center / cover no-repeat` :
+        'radial-gradient(55% 32% at 28% 26%, rgba(243,237,226,.5), rgba(243,237,226,0) 70%), radial-gradient(45% 30% at 78% 52%, rgba(154,120,110,.45), rgba(154,120,110,0) 70%), ' +
+        'radial-gradient(80% 45% at 50% 108%, rgba(31,52,96,.75), rgba(31,52,96,0) 72%), radial-gradient(40% 25% at 18% 70%, rgba(205,196,184,.28), rgba(205,196,184,0) 70%), linear-gradient(172deg, #4a4f5a, #23262d 60%, #15171c)') + ';';
+      root.appendChild(el);
+      return el;
+    },
+    // 0~1 사이 값을 부드럽게 (천천히 출발, 천천히 도착)
+    ease: x => { x = Math.max(0, Math.min(1, x)); return x * x * (3 - 2 * x); },
+    // 0~1 사이 값을 통통 튀게 (살짝 넘쳤다가 제자리로)
+    spring: x => { x = Math.max(0, Math.min(1, x)) - 1; return 1 + 2.70158 * x * x * x + 1.70158 * x * x; },
+    // 화면 한가운데가 (0,0,0)인 3D 공간. 숫자가 작을수록 원근감이 세집니다
+    space(perspective) {
+      root.style.perspective = perspective ? perspective + 'px' : 'none';
+      return api.group(root, 'left:50%;top:50%;');
+    },
+    // 여러 조각을 한꺼번에 돌리거나 옮길 묶음
+    group(parent, extra) {
+      const el = document.createElement('div');
+      el.style.cssText = 'position:absolute;left:0;top:0;width:0;height:0;transform-style:preserve-3d;' + (extra || '');
+      parent.appendChild(el);
+      return el;
+    },
+    // 빈 상자 하나. 상자의 중심이 (0,0)에 놓입니다 (UI 모션에서 사용)
+    box(parent, w, h, css) {
+      const el = document.createElement('div');
+      el.style.cssText = `position:absolute;left:0;top:0;box-sizing:border-box;width:${w}px;height:${h}px;margin:${-h / 2}px 0 0 ${-w / 2}px;font-family:${FONT};` + (css || '');
+      parent.appendChild(el);
+      return el;
+    },
+    // 카드 한 장. 카드의 중심이 (0,0)에 놓입니다 (카드 모션에서 사용)
+    card(parent, i, w, h, twoSided) {
+      const el = api.box(parent, w, h, 'overflow:hidden;'), s = el.style;
+      s.borderRadius = Math.min(w, h) * (CFG.radius || 0) + 'px';
+      s.backfaceVisibility = s.webkitBackfaceVisibility = twoSided ? 'visible' : 'hidden';
+      s.background = api.paint(i);
+      return el;
+    }
+  };
+
+  function build() {
+    const W = root.clientWidth, H = root.clientHeight;
+    if (!W || !H || size === W + 'x' + H) return;
+    size = W + 'x' + H;
+    if (frame && frame.dispose) frame.dispose();   // WebGL 모션은 다시 만들기 전에 정리
+    root.textContent = '';
+    api.W = W; api.H = H; api.u = Math.min(W, H);
+    if (LIVE && !TRY) { measure(); live.s = live.ts; }
+    frame = motion(api);
+    frame(time);
+    runs(root);
+    if (watch) watch.takeRecords();   // 방금 만든 장면은 위에서 다 봤으니 쌓인 기록은 버림
+  }
+  // 한 글줄 안에 한글과 영문·숫자가 섞였는데 영문 전용 글꼴(Anton·Inter 등)이 앞에 서 있으면,
+  // 그 글줄은 글꼴 목록 뒤쪽의 한글 글꼴로 통째로 씁니다 (영문 글꼴과 한글 글꼴이 한 줄에서 따로 놀지 않게)
+  const LATIN = /^(Anton|Archivo|Instrument Serif|Inter|JetBrains Mono)$/i;
+  function runs(top) {
+    const walk = document.createTreeWalker(top, NodeFilter.SHOW_TEXT), seen = new Set();
+    for (let n = walk.nextNode(); n; n = walk.nextNode()) if (n.parentElement) seen.add(n.parentElement);
+    seen.forEach(el => {
+      let own = '';
+      el.childNodes.forEach(c => { if (c.nodeType === 3) own += c.nodeValue; });
+      if (!/[\u3131-\u318e\uac00-\ud7a3]/.test(own) || !/[A-Za-z0-9]/.test(own)) return;
+      const list = getComputedStyle(el).fontFamily.split(',').map(f => f.trim().replace(/^["']|["']$/g, ''));
+      if (!LATIN.test(list[0])) return;
+      el.style.fontFamily = list.filter(f => !LATIN.test(f)).map(f => /^[a-z-]+$/.test(f) ? f : '"' + f + '"').join(',');
+    });
+  }
+  // 장면이 글자를 바꾸면 바뀐 곳만 다시 봅니다
+  const watch = window.MutationObserver ? new MutationObserver(list => mend(list)) : null;
+  const mend = list => list.forEach(r => { const el = r.target.nodeType === 3 ? r.target.parentElement : r.target; if (el && root.contains(el)) runs(el); });
+  if (watch) watch.observe(root, { childList: true, characterData: true, subtree: true });
+  function tick(now) {
+    raf = requestAnimationFrame(tick);
+    const dt = Math.max(0, Math.min((now - last) / 1000, 0.1));
+    time += dt * CFG.speed;                       // 흐른 시간만큼 (뒤로 가지 않게)
+    if (CFG.once && time > CFG.once) time = CFG.once;   // 한 번만: 화면에 들어오면 한 번 재생하고 이 초의 장면에서 멈춤
+    last = now;
+    if (LIVE) follow(dt);
+    if (frame) frame(time);
+  }
+  // 스크롤 진행: CONFIG.track이 있으면 그 칸(키 큰 칸 안에 이 상자를 position:sticky로 넣은 경우)을 다 내려가는 정도, 없으면 이 상자가 화면 아래에서 위로 지나가는 정도
+  function measure() {
+    const el = CFG.track ? document.querySelector(CFG.track) : root;
+    if (!el) return;
+    const r = el.getBoundingClientRect(), vh = window.innerHeight || 1;
+    live.ts = Math.max(0, Math.min(1, CFG.track ? -r.top / Math.max(1, r.height - vh) : (vh - r.top) / (vh + r.height)));
+  }
+  // 진짜 마우스·스크롤 값을 부드럽게 따라감
+  function follow(dt) {
+    const k = 1 - Math.exp(-dt * 14);
+    live.x += (live.tx - live.x) * k;
+    live.y += (live.ty - live.y) * k;
+    live.over += ((live.on ? 1 : 0) - live.over) * (1 - Math.exp(-dt * 6));
+    live.down += ((live.press ? 1 : 0) - live.down) * (1 - Math.exp(-dt * 18));
+    if (!TRY) { measure(); live.s += (live.ts - live.s) * (1 - Math.exp(-dt * 10)); }
+  }
+  const spot = e => {
+    const r = root.getBoundingClientRect();
+    live.tx = (e.clientX - r.left) * root.clientWidth / (r.width || 1);
+    live.ty = (e.clientY - r.top) * root.clientHeight / (r.height || 1);
+    if (!live.ready) { live.x = live.tx; live.y = live.ty; live.ready = true; }
+  };
+  // 멈춰 있을 때(일시 정지·동작 줄이기 설정)도 마우스에는 바로 반응
+  const poke = () => { if (playing || !frame) return; live.x = live.tx; live.y = live.ty; live.over = live.on ? 1 : 0; live.down = live.press ? 1 : 0; frame(time); };
+  const hands = {
+    pointerenter: e => { spot(e); live.on = true; poke(); },
+    pointermove: e => { spot(e); live.on = true; poke(); },
+    pointerleave: () => { live.on = false; live.press = false; poke(); },
+    pointerdown: e => { spot(e); live.on = live.press = true; poke(); },
+    pointerup: () => { live.press = false; poke(); }
+  };
+  if (LIVE) Object.keys(hands).forEach(k => root.addEventListener(k, hands[k]));
+  // 화면에 보일 때만 움직입니다
+  function sync() {
+    const on = want && seen;
+    if (on && !playing) { playing = true; last = performance.now(); raf = requestAnimationFrame(tick); }
+    if (!on && playing) { playing = false; cancelAnimationFrame(raf); }
+  }
+
+  Object.assign(root.style, { position: 'relative', overflow: 'hidden', background: CFG.bg, aspectRatio: CFG.ratio });
+  build();
+  const ro = new ResizeObserver(() => { clearTimeout(timer); timer = setTimeout(build, 100); });
+  const io = new IntersectionObserver(e => { seen = e[e.length - 1].isIntersecting; sync(); });
+  // 웹폰트로 그리는 모션은 폰트가 도착하면 크기를 다시 재서 그립니다
+  const refit = () => { if (frame && (frame.fonts || drew)) { size = ''; build(); } };
+  if (document.fonts && document.fonts.addEventListener) document.fonts.addEventListener('loadingdone', refit);
+  ro.observe(root);
+  io.observe(root);
+  sync();
+
+  return {
+    play() { want = true; sync(); },
+    pause() { want = false; sync(); },
+    restart() { time = 0; if (frame) frame(time); },
+    seek(t) { time = t; if (frame) frame(time); if (watch) mend(watch.takeRecords()); },   // t초의 장면으로 건너뜀 (영상으로 한 장씩 찍을 때)
+    destroy() { want = false; sync(); if (LIVE) Object.keys(hands).forEach(k => root.removeEventListener(k, hands[k])); ro.disconnect(); io.disconnect(); if (watch) watch.disconnect(); clearTimeout(timer); if (document.fonts && document.fonts.removeEventListener) document.fonts.removeEventListener('loadingdone', refit); if (frame && frame.dispose) frame.dispose(); root.textContent = ''; }
+  };
+}
+
+function gdRGB(color) {
+  return /^#[0-9a-f]{6}$/i.test(color) ? [1, 3, 5].map(i => parseInt(color.slice(i, i + 2), 16) / 255) : [0, 0, 0];
+}
+
+function gdMix(a, b, k) {
+  const x = gdRGB(a), y = gdRGB(b);
+  return x.map((v, i) => v + (y[i] - v) * k);
+}
+
+function gdShader(api, body, scale, loop, budget) {
+  const W = api.W, H = api.H;
+  let k = Math.min(2, window.devicePixelRatio || 1, 2200 / Math.max(W, H)) * (scale || 1);
+  if (budget && W * H * k * k > budget) k = Math.sqrt(budget / (W * H));
+  const cv = document.createElement('canvas');
+  cv.width = Math.max(2, Math.round(W * k));
+  cv.height = Math.max(2, Math.round(H * k));
+  cv.style.cssText = `position:absolute;left:0;top:0;width:${W}px;height:${H}px;`;
+  api.root.appendChild(cv);
+  const gl = cv.getContext('webgl', { preserveDrawingBuffer: true, premultipliedAlpha: false, alpha: true, antialias: false });
+  const stub = { cv: cv, set() {}, draw() {}, dispose() {} };
+  if (!gl) return stub;
+  gl.getExtension('OES_standard_derivatives');
+  const head = [
+    '#extension GL_OES_standard_derivatives : enable',
+    '#ifdef GL_FRAGMENT_PRECISION_HIGH',
+    'precision highp float;',
+    '#else',
+    'precision mediump float;',
+    '#endif',
+    'uniform vec2 uRes, uSize;',
+    'uniform float uK, uT, uLoop, uClear;',
+    '#define TAU 6.2831853',
+    'vec2 px() { return vec2(gl_FragCoord.x, uRes.y - gl_FragCoord.y) / uK; }',
+    'float hash(vec2 p) { vec3 q = fract(vec3(p.xyx) * 0.1031); q += dot(q, q.yzx + 33.33); return fract((q.x + q.y) * q.z); }',
+    'float hash3(vec3 p) { p = fract(p * 0.1031); p += dot(p, p.zyx + 31.32); return fract((p.x + p.y) * p.z); }',
+    'float noise(vec2 p) { vec2 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);',
+    '  return mix(mix(hash(i), hash(i + vec2(1.0, 0.0)), f.x), mix(hash(i + vec2(0.0, 1.0)), hash(i + vec2(1.0, 1.0)), f.x), f.y); }',
+    'float noise3(vec3 p) { vec3 i = floor(p), f = fract(p); f = f * f * (3.0 - 2.0 * f);',
+    '  float a = mix(mix(hash3(i), hash3(i + vec3(1.0, 0.0, 0.0)), f.x), mix(hash3(i + vec3(0.0, 1.0, 0.0)), hash3(i + vec3(1.0, 1.0, 0.0)), f.x), f.y);',
+    '  float b = mix(mix(hash3(i + vec3(0.0, 0.0, 1.0)), hash3(i + vec3(1.0, 0.0, 1.0)), f.x), mix(hash3(i + vec3(0.0, 1.0, 1.0)), hash3(i + vec3(1.0, 1.0, 1.0)), f.x), f.y);',
+    '  return mix(a, b, f.z); }',
+    'float fbm(vec2 p) { float n = 0.0, a = 0.5; for (int i = 0; i < 4; i++) { n += a * noise(p); p = p * 2.03 + vec2(1.7, 9.2); a *= 0.5; } return n / 0.9375; }',
+    'float turn(float n) { return TAU * n * uT / uLoop; }',
+    'float sq(float x) { return x * x; }',
+    'float dither() { return (hash(gl_FragCoord.xy) - 0.5) / 255.0; }',
+    'float ign() { return hash(gl_FragCoord.xy * 1.37 + 17.0); }',
+    ''
+  ].join('\n');
+  const make = (type, text) => {
+    const s = gl.createShader(type);
+    gl.shaderSource(s, text);
+    gl.compileShader(s);
+    if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) console.warn(gl.getShaderInfoLog(s));
+    return s;
+  };
+  const prog = gl.createProgram();
+  gl.attachShader(prog, make(gl.VERTEX_SHADER, 'attribute vec2 a; void main() { gl_Position = vec4(a, 0.0, 1.0); }'));
+  gl.attachShader(prog, make(gl.FRAGMENT_SHADER, head + body));
+  gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) { console.warn(gl.getProgramInfoLog(prog)); return stub; }
+  gl.useProgram(prog);
+  gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 1, -1, -1, 1, -1, 1, 1, -1, 1, 1]), gl.STATIC_DRAW);
+  const pos = gl.getAttribLocation(prog, 'a');
+  gl.enableVertexAttribArray(pos);
+  gl.vertexAttribPointer(pos, 2, gl.FLOAT, false, 0, 0);
+  const spots = {};
+  const where = name => name in spots ? spots[name] : (spots[name] = gl.getUniformLocation(prog, name));
+  const st = {
+    cv: cv,
+    // uniform 값 넣기: 숫자 하나 또는 [2~4개], 또는 vec4 여러 개를 이어 붙인 긴 배열(이름에 [0]을 붙여서)
+    set(name, v) {
+      const l = where(name);
+      if (!l) return;
+      if (typeof v === 'number') gl.uniform1f(l, v);
+      else if (v.length === 2) gl.uniform2fv(l, v);
+      else if (v.length === 3) gl.uniform3fv(l, v);
+      else gl.uniform4fv(l, v);
+    },
+    draw(t) {
+      if (gl.isContextLost()) return;
+      st.set('uT', t);
+      gl.viewport(0, 0, cv.width, cv.height);
+      gl.drawArrays(gl.TRIANGLES, 0, 6);
+    },
+    // 다시 만들기 전에 정리 (엔진이 frame.dispose로 부름)
+    dispose() { const x = gl.getExtension('WEBGL_lose_context'); if (x) x.loseContext(); }
+  };
+  st.set('uRes', [cv.width, cv.height]);
+  st.set('uSize', [W, H]);
+  st.set('uK', cv.width / W);
+  st.set('uLoop', loop || 10);
+  st.set('uClear', api.clear ? 1 : 0);
+  return st;
+}
+
+function gdLabel(api, text, top) {
+  const el = document.createElement('div'), u = api.u;
+  el.textContent = text;
+  el.style.cssText = `position:absolute;left:${u * 0.06}px;${top ? 'top' : 'bottom'}:${u * 0.055}px;font:600 ${Math.max(9, u * 0.02)}px/1.3 'Pretendard Variable','Pretendard',sans-serif;` +
+    `letter-spacing:.16em;white-space:nowrap;pointer-events:none;color:${api.clear ? '#ffffff' : api.fg};opacity:${api.clear ? 1 : 0.72};` +
+    (api.clear ? 'text-shadow:0 1px 3px rgba(0,0,0,.45),0 4px 14px rgba(0,0,0,.3);' : '');
+  api.root.appendChild(el);
+  if (document.fonts) document.fonts.load(`600 20px "Pretendard Variable"`, text);
+  return el;
+}
+
+function bgCloudSea(api) {
+  const LOOP = 48;                // 한 바퀴 길이(초). 이 사이에 구름 무늬 한 벌만큼 나아갑니다
+  const GLOW = 1;                 // 지평선 새벽빛 세기 (1 = 기본)
+  const SHOW_TEXT = false;        // 작은 라벨 보이기
+  const LABEL = '새벽을 여는 연구';       // 라벨 글
+  const W = api.W, H = api.H, tall = H / W > 1.2;
+  const frag = `
+uniform vec3 uTopC, uMidC, uDawn, uLit, uDeep;
+uniform vec3 uG, uCam;
+uniform float uPitch, uYaw, uGlow, uRoll;
+const float PER = 8.0, SC = 0.32, TOP = 0.25, BOT = -0.9;
+float noiseP(vec2 p, float per) {
+  vec2 i = floor(p), f = fract(p);
+  f = f * f * (3.0 - 2.0 * f);
+  float y0 = mod(i.y, per), y1 = mod(i.y + 1.0, per);
+  return mix(mix(hash(vec2(i.x, y0)), hash(vec2(i.x + 1.0, y0)), f.x), mix(hash(vec2(i.x, y1)), hash(vec2(i.x + 1.0, y1)), f.x), f.y);
+}
+// 구름 꼭대기 높이: 무늬가 일정 이상인 곳만 둥글게 부풀어 오름(제곱근 모양 → 둥근 머리, 가파른 옆), 그 위에 잔 뭉게 결
+float cloud(vec2 xz) {
+  vec2 q = xz * SC;
+  float n = 0.52 * noiseP(q, PER) + 0.27 * noiseP(q * 2.0 + vec2(5.3, 0.0), PER * 2.0) + 0.14 * noiseP(q * 4.0 + vec2(1.1, 0.0), PER * 4.0);
+  float puff = sqrt(clamp((n - 0.36) / 0.46, 0.0, 1.0));
+  float b = abs(2.0 * noiseP(q * 8.0 + vec2(7.7, 0.0), PER * 8.0) - 1.0);
+  float b2 = abs(2.0 * noiseP(q * 16.0 + vec2(2.9, 0.0), PER * 16.0) - 1.0);
+  return mix(BOT, TOP, puff) + ((b - 0.5) * 0.07 + (b2 - 0.5) * 0.025) * puff;
+}
+void main() {
+  vec2 p = px();
+  vec2 uv = (p - 0.5 * uSize) / (0.5 * uSize.y);
+  uv.y = -uv.y;
+  float cr = cos(uRoll), sr = sin(uRoll);
+  uv = vec2(cr * uv.x - sr * uv.y, sr * uv.x + cr * uv.y);
+  float fov = 0.6;
+  vec3 ro = uCam;
+  vec3 fw = normalize(vec3(sin(uYaw) * cos(uPitch), sin(uPitch), -cos(uYaw) * cos(uPitch)));
+  vec3 rt = normalize(cross(fw, vec3(0.0, 1.0, 0.0)));
+  vec3 up = cross(rt, fw);
+  vec3 rd = normalize(fw + (uv.x * rt + uv.y * up) * fov);
+  vec3 hd = normalize(vec3(rd.x, 0.0, rd.z));
+  float gA = max(dot(hd, normalize(vec3(uG.x, 0.0, uG.z))), 0.0);
+  // 하늘: 지평선의 진주빛 새벽 → 위로 깊은 남색 (해는 아직 지평선 아래)
+  float hy = max(rd.y, 0.0);
+  vec3 sky = mix(uMidC, uTopC, smoothstep(0.0, 0.6, hy));
+  float glow = (pow(gA, 4.0) * 0.6 + 0.25) * exp(-hy * 9.0) + pow(gA, 30.0) * exp(-hy * 30.0) * 0.5;
+  sky += uDawn * glow * 0.55 * uGlow;
+  // 아주 작은 별 (위쪽만)
+  vec2 ci = floor(p / 5.0);
+  float hs = hash(ci + 9.1);
+  vec2 sp = (ci + 0.2 + 0.6 * vec2(hash(ci + 2.3), hash(ci + 7.7))) * 5.0;
+  float star = step(0.987, hs) * exp(-dot(p - sp, p - sp) / 0.4) * (0.15 + 0.3 * hash(ci + 1.9)) * smoothstep(0.1, 0.4, rd.y);
+  sky += uLit * star;
+  vec3 col = sky;
+  float alpha = 0.0;
+  if (rd.y < -0.0005) {
+    float t = (TOP + 0.05 - ro.y) / rd.y, hit = 0.0, tmax = min((BOT - ro.y) / rd.y, 70.0);
+    float pt = t;
+    for (int i = 0; i < 64; i++) {
+      vec3 q = ro + rd * t;
+      float d = q.y - cloud(q.xz);
+      if (d < 0.002 * t) { hit = 1.0; break; }
+      pt = t;
+      t += max(0.45 * d, 0.01 + 0.004 * t);
+      if (t > tmax) { t = tmax; break; }
+    }
+    if (hit > 0.5) for (int k = 0; k < 5; k++) { float m = 0.5 * (pt + t); vec3 q = ro + rd * m; if (q.y < cloud(q.xz)) t = m; else pt = m; }
+    vec3 P = ro + rd * t;
+    float h = cloud(P.xz);
+    float e = 0.16 + t * 0.008;
+    vec3 N = normalize(vec3(h - cloud(P.xz + vec2(e, 0.0)), e, h - cloud(P.xz + vec2(0.0, e))));
+    float occ = smoothstep(BOT, TOP, h);
+    float ndl = dot(N, uG);
+    float wrap = clamp((ndl + 0.3) / 1.3, 0.0, 1.0);
+    // 가장자리: 얇은 구름 끝은 빛이 비쳐 밝게 (딱딱한 윤곽을 부드럽게), 빛 쪽을 볼 때 은빛 테
+    float edge = pow(1.0 - max(dot(N, -rd), 0.0), 3.0);
+    float rim = edge * (0.35 + 0.65 * pow(gA, 3.0));
+    vec3 c = mix(uDeep, uLit, occ * (0.15 + 0.85 * wrap) * mix(0.62, 1.0, smoothstep(1.5, 12.0, t)));
+    c += uDawn * rim * 0.38 * occ * uGlow;
+    // 먼 곳은 지평선 빛으로 잦아듦
+    float fog = 1.0 - exp(-t * 0.05);
+    vec3 hz = uMidC + uDawn * (pow(gA, 4.0) * 0.6 + 0.25) * 0.5 * uGlow;
+    col = mix(c, hz, fog);
+    alpha = occ * (0.3 + 0.7 * wrap) * (1.0 - fog * 0.7);
+    if (uClear > 0.5) { gl_FragColor = vec4(uLit, clamp(alpha * 0.85, 0.0, 1.0)); return; }
+  } else if (uClear > 0.5) { gl_FragColor = vec4(uDawn, clamp(glow * 0.8 + star, 0.0, 1.0)); return; }
+  col += dither() * 2.0;
+  gl_FragColor = vec4(col, 1.0);
+}`;
+  const sh = gdShader(api, frag, 0.8, LOOP, 700000);
+  const bg = gdRGB(api.bg), navy = gdRGB(api.accent);
+  sh.set('uTopC', bg.map(v => v * 0.75));
+  sh.set('uMidC', bg.map((v, i) => v * 0.6 + navy[i] * 0.55));
+  sh.set('uDawn', gdMix(api.tone(0), '#ffffff', 0.3));
+  sh.set('uLit', gdMix(api.tone(1), api.tone(0), 0.4));
+  sh.set('uDeep', bg.map((v, i) => v * 0.7 + navy[i] * 0.25));
+  sh.set('uGlow', GLOW);
+  sh.set('uPitch', tall ? -0.22 : -0.15);
+  sh.set('uG', (() => { const v = [-0.32, 0.06, -1]; const l = Math.hypot(v[0], v[1], v[2]); return v.map(x => x / l); })());
+  if (SHOW_TEXT) gdLabel(api, LABEL);
+  const span = 8 / 0.32;   // 구름 무늬 한 벌의 길이 (셰이더의 PER / SC)
+  const frame = t => {
+    const tt = t % LOOP, ph = Math.PI * 2 * tt / LOOP;
+    const P = api.pointer({ x: W / 2, y: H / 2, down: 0, on: 0 });
+    sh.set('uCam', [0.6 * Math.sin(ph), 1.6 + 0.06 * Math.sin(ph * 2), -tt / LOOP * span]);
+    sh.set('uYaw', -0.12 + 0.05 * Math.sin(ph) + (P.x / W - 0.5) * 0.3 * P.on);
+    sh.set('uRoll', -0.012 * Math.cos(ph));
+    sh.draw(tt);
+  };
+  frame.fonts = SHOW_TEXT;
+  frame.dispose = sh.dispose;
+  return frame;
+}
+
+function qmKit(api) {
+  const clamp = x => Math.max(0, Math.min(1, x));
+  const kit = {
+    sans: '"Pretendard Variable","Pretendard","Noto Sans KR",' + api.font,    // 기본 글꼴: 프리텐다드 하나로 한글·영문을 함께 (한 줄 안에서 글꼴이 섞이지 않게)
+    serif: '"Instrument Serif","MaruBuri","Noto Serif KR","Times New Roman",serif',     // 강조 한마디에 쓰는 세리프 (영문은 기울임과 잘 어울리는 Instrument Serif, 한글이 섞인 글줄은 마루 부리 하나로)
+    mono: '"JetBrains Mono","Pretendard Variable",ui-monospace,"SFMono-Regular",Menlo,Consolas,monospace',   // 작은 라벨·숫자 (한글이 섞인 라벨은 프리텐다드 하나로)
+    clamp: clamp,
+    seg: (t, a, b) => clamp((t - a) / (b - a)),                 // t가 a~b 사이 어디쯤인지 0~1로
+    mix: (a, b, p) => a + (b - a) * p,
+    out: x => 1 - Math.pow(1 - clamp(x), 4),                    // 빠르게 출발해 부드럽게 멈춤 (cubic-bezier(.22,1,.36,1)과 비슷)
+    expo: x => { x = clamp(x); return x >= 1 ? 1 : 1 - Math.pow(2, -10 * x); },   // 더 급하게 출발해 길게 멈춤 (cubic-bezier(.16,1,.3,1)과 비슷)
+    into: x => Math.pow(clamp(x), 3),                           // 천천히 출발해 빠르게 빠져나감
+    io: x => { x = clamp(x); return x < 0.5 ? 8 * x * x * x * x : 1 - Math.pow(-2 * x + 2, 4) / 2; },   // 천천히-빠르게-천천히 (cubic-bezier(.76,0,.24,1)과 비슷)
+    // 글자를 쪼개 parent에 넣음. by: 'line'(줄바꿈 \n 기준) | 'word' | 'char'
+    // 조각마다 가림막(overflow:hidden) 하나와 그 안에서 움직일 알맹이 하나가 생깁니다. 돌려주는 값: 알맹이 목록
+    split(parent, text, by) {
+      const units = by === 'line' ? String(text).split('\n') : by === 'word' ? String(text).split(/(\s+)/) : Array.from(String(text));
+      const parts = [];
+      units.forEach(unit => {
+        if (!unit) return;
+        if (by !== 'line' && /^\s+$/.test(unit)) { parent.appendChild(document.createTextNode(unit.indexOf('\n') >= 0 ? '\n' : ' ')); return; }
+        const mask = document.createElement('span'), core = document.createElement('span');
+        // 가림막은 위아래로 조금 넉넉하게 (받침·꼬리가 잘리지 않게), 그만큼 바깥 여백을 당겨 줄 간격은 그대로 둠
+        mask.style.cssText = `display:${by === 'line' ? 'block' : 'inline-block'};overflow:hidden;vertical-align:top;padding:.14em 0;margin:-.14em 0;` + (by === 'line' ? '' : 'white-space:pre;');
+        core.style.cssText = `display:${by === 'line' ? 'block' : 'inline-block'};will-change:transform;`;
+        core.textContent = unit;
+        mask.appendChild(core);
+        parent.appendChild(mask);
+        parts.push(core);
+      });
+      return parts;
+    },
+    // 조각들이 차례로 아래에서 올라옴: p는 전체 진행 0~1, gap은 조각 사이 시차(전체의 몇 분의 일), 올라온 뒤 그대로 있음
+    rise(parts, p, gap) {
+      const each = 1 - (gap || 0.5), n = Math.max(1, parts.length - 1);
+      parts.forEach((el, i) => {
+        const q = kit.expo(kit.seg(p, (i / n) * (1 - each), (i / n) * (1 - each) + each));
+        el.style.transform = `translate3d(0,${(1 - q) * 108}%,0)`;
+      });
+    },
+    // 작은 라벨 (대문자, 자간 넓게)
+    label(parent, text, px, color) {
+      const el = document.createElement('span');
+      el.textContent = text;
+      el.style.cssText = `display:block;font:500 ${px}px/1.2 ${kit.mono};letter-spacing:.12em;text-transform:uppercase;color:${color || api.fg};white-space:nowrap;`;
+      parent.appendChild(el);
+      return el;
+    }
+  };
+  return kit;
+}
+
+function textTools(api, kit) {
+  const W = api.W, H = api.H, u = api.u;
+  const rgb = c => /^#[0-9a-f]{6}$/i.test(c) ? [1, 3, 5].map(i => parseInt(c.slice(i, i + 2), 16)) : [128, 128, 128];
+  const light = c => { const v = rgb(c); return (v[0] * 299 + v[1] * 587 + v[2] * 114) / 1000; };   // 색의 밝기 0~255
+  const dice = api.rand(7), table = Array.from({ length: 499 }, () => dice());
+  const tx = {
+    u: u,
+    s: Math.min(W, H * 1.25),                          // 큰 글자 크기의 기준 길이 (가로로 긴 화면에서는 조금 더 크게)
+    pad: Math.round(u * 0.085),                        // 화면 가장자리 여백
+    tiny: Math.max(8, Math.round(u * 0.023)),          // 작은 라벨 글자 크기
+    hair: Math.max(1, Math.round(u / 560)),            // 가는 줄 굵기
+    mono: kit.mono.replace(',', ',"Noto Sans KR",'),   // 라벨 글꼴 (한글이 섞이면 Noto Sans KR로 보임)
+    tint: (c, a) => `rgba(${rgb(c).join(',')},${a})`,  // 색을 반투명하게
+    blend: (a, b, p) => `rgb(${rgb(a).map((v, i) => Math.round(v + (rgb(b)[i] - v) * p)).join(',')})`,   // 두 색을 섞음 (p가 0이면 a, 1이면 b)
+    // 이 배경 위에서 또렷이 보이는 포인트 색 (포인트 색이 배경에 묻히면 다음 후보를 고름)
+    pop: [api.accent, api.tone(3), api.deep, api.fg].find(c => Math.abs(light(c) - light(api.bg)) > 80) || api.fg,
+    dark: light(api.bg) < 128,                         // 어두운 배경인지
+    hangul: ch => /[ㄱ-ㆎ가-힣]/.test(ch),
+    noise: i => table[((Math.floor(i) % 499) + 499) % 499],   // 매번 같은 값이 나오는 난수표 (0~1)
+    // CONFIG.words에 낱말을 넣었으면 그것을, 아니면 기본 낱말을 씁니다
+    words: def => { const w = (api.words || []).filter(Boolean); return w.length ? w : def; },
+    // 조각 하나 만들기
+    el(parent, css, text, tag) {
+      const e = document.createElement(tag || 'div');
+      e.style.cssText = css || '';
+      if (text !== undefined) e.textContent = text;
+      parent.appendChild(e);
+      return e;
+    },
+    // 화면 전체를 덮는 바탕 (왼쪽 위가 0,0)
+    layer: () => tx.el(api.root, `position:absolute;left:0;top:0;width:100%;height:100%;font-family:${kit.sans};color:${api.fg};-webkit-font-smoothing:antialiased;word-break:keep-all;`),
+    // 가는 줄. 돌려받은 조각의 transform으로 늘이고 줄입니다
+    rule: (parent, left, top, width, alpha) => tx.el(parent, `position:absolute;left:${Math.round(left)}px;top:${Math.round(top)}px;width:${Math.round(width)}px;height:${tx.hair}px;background:${api.fg};opacity:${alpha === undefined ? 0.2 : alpha};transform-origin:0 50%;`),
+    // 작은 라벨 (대문자, 자간 넓게). css로 자리를 정하고, 돌려받은 알맹이를 가림막 안에서 움직일 수 있습니다
+    label(parent, text, css, alpha) {
+      const mask = tx.el(parent, `position:absolute;overflow:hidden;white-space:nowrap;font:500 ${tx.tiny}px/1.5 ${tx.mono};letter-spacing:.12em;text-transform:uppercase;color:${api.fg};` + (css || ''));
+      return tx.el(mask, `display:block;opacity:${alpha === undefined ? 0.6 : alpha};will-change:transform;`, text, 'span');
+    },
+    // 조각의 폭이 room을(높이는 tall을) 넘지 않게 글자 크기를 정함 (px에서 시작해 넘치면 줄임). 정한 크기를 돌려줌
+    fit(el, room, px, tall) {
+      el.style.fontSize = px + 'px';
+      const box = el.getBoundingClientRect(), k = Math.min(1, room / (box.width || room), tall ? tall / (box.height || tall) : 1);
+      if (k < 1) { px = Math.floor(px * k * 50) / 50; el.style.fontSize = px + 'px'; }
+      return px;
+    },
+    // 조각을 위아래 두 높이(top ~ bottom) 사이 한가운데에 놓음
+    center(el, top, bottom) { el.style.top = Math.round(top + (bottom - top - el.offsetHeight) / 2) + 'px'; },
+    // 가림막 안 조각의 자리: come(0→1)이면 아래에서 올라와 제자리, go(0→1)면 위로 빠져나감
+    slide(el, come, go) { el.style.transform = `translate3d(0,${(1 - come - go) * 112}%,0)`; },
+    // 글자마다 따로 둔 가림막을 양옆으로 조금 넓힘 (자간을 좁혀도 글자 끝이 잘리지 않게)
+    widen(parts) { parts.forEach(el => { el.parentNode.style.padding = '.14em .1em'; el.parentNode.style.margin = '-.14em -.1em'; }); return parts; }
+  };
+  return tx;
+}
+
+function blurIn(api) {
+  const LINES = ['첫 주를 든든하게', '열어 주셔서', '고맙습니다'];   // 보여 줄 문장 (줄마다 한 줄)
+  const LABEL = '1·2강 강사님께';                 // 위쪽 작은 라벨
+  const GAP = 0.2, TAKE = 1.1, BLUR = 0.22, HOLD = 3.6;   // 낱말 사이 시차 · 한 낱말이 또렷해지는 시간(초) · 처음 흐림 정도(글자 크기의 몇 배) · 머무는 시간
+  const kit = qmKit(api), tx = textTools(api, kit), root = tx.layer();
+  const pad = tx.pad, room = api.W - pad * 2;
+  const block = tx.el(root, `position:absolute;left:${pad}px;top:0;font-family:'Paperlogy','Pretendard Variable',sans-serif;font-weight:800;letter-spacing:-.035em;line-height:1.28;white-space:nowrap;`);
+  const words = [];
+  LINES.forEach(line => {
+    const row = tx.el(block);
+    line.split(' ').forEach((word, i) => {
+      if (i) row.appendChild(document.createTextNode(' '));
+      words.push(tx.el(row, 'display:inline-block;will-change:transform,filter,opacity;', word, 'span'));
+    });
+  });
+  const px = tx.fit(block, room, tx.s * 0.125, api.H - pad * 2 - tx.tiny * 7);
+  tx.center(block, pad + tx.tiny * 3.6, api.H - pad);
+  const label = tx.label(root, LABEL, `left:${pad}px;top:${pad}px;`);
+  const mark = tx.el(root, `position:absolute;left:${pad}px;top:${Math.round(pad + tx.tiny * 2.6)}px;width:${Math.round(tx.u * 0.07)}px;height:${tx.hair}px;background:${tx.pop};transform-origin:0 50%;`);
+  const foot = tx.rule(root, pad, api.H - pad, room, 0);
+  const n = words.length, T0 = 0.35, OUT = T0 + TAKE + GAP * (n - 1) + HOLD, LOOP = OUT + 2.2;
+  const frame = t => {
+    t %= LOOP;
+    words.forEach((el, i) => {
+      const come = kit.out(kit.seg(t, T0 + i * GAP, T0 + i * GAP + TAKE)), go = kit.into(kit.seg(t, OUT + i * 0.024, OUT + i * 0.024 + 0.48));
+      const blur = (1 - come) * BLUR * px + go * BLUR * 0.8 * px;
+      el.style.filter = blur > 0.05 ? `blur(${blur.toFixed(2)}px)` : 'none';
+      el.style.opacity = Math.min(1, come * 1.15) * (1 - go);
+      el.style.transform = `translate3d(0,${((1 - come) * 0.32 - go * 0.22) * px}px,0)`;
+    });
+    const draw = kit.expo(kit.seg(t, 0.1, 1.1)), gone = kit.io(kit.seg(t, OUT + 0.1, OUT + 0.7));
+    mark.style.transform = `scaleX(${draw * (1 - gone)})`;
+    foot.style.transform = `translate3d(${gone * room}px,0,0) scaleX(${draw * (1 - gone)})`;
+    tx.slide(label, kit.expo(kit.seg(t, 0.1, 0.9)), kit.into(kit.seg(t, OUT + 0.1, OUT + 0.6)));
+  };
+  frame.fonts = true;
+  return frame;
+}
+
+/* 3번 카드에서 줄을 누르면 보여 줄 실제 질문 (시트 원문) */
+const QNA = {"3": {"who": "3강", "title": "3강으로 온 질문 4개", "sub": "클로드코드와 깃허브", "items": [["1", "호스팅 부분을 좀 더 알고 싶습니다.", 0], ["1", "궁금한 점 - 안티그라비티에서 수정할 것 있다면 안티그라비티에서 수정하고 나서, 다시 업로드를 해야하는 건가요?", 0], ["1", "오늘 만든 프로젝트에서 변경수정사항이 있다면 에이전트에 요청하여 수정하고 다시 깃허브 반영하면 되는걸까요?", 0], ["1", "만들고 > 저장하고 > 배포하고 > 이후 관리하고.. 결국 이 흐름 같은데요. 이걸 머리 속에 각인시키는게 가장 어렵기도 해요.", 0]]}, "4": {"who": "4강", "title": "4강으로 온 질문 1개", "sub": "컴포넌트와 에셋", "items": [["1", "예쁘게 디자인 하여 만드는 것 밤티 프로그램이 만들어짐", 0]]}, "5": {"who": "5강", "title": "5강으로 온 질문 6개", "sub": "교실의 아이디어를 현실로", "items": [["2", "크래프트 활용 방법 더 알고 싶어요, 학급경영 사이트 데이터베이스는 어떻게 구현하셨는지 궁금해요", 0], ["2", "디테일한 학급운영 웹앱 제작 방법에 대해서도 궁금해요", 0], ["2", "문제 퀴즈 웹 앱이 너무 좋고, 선생님께서 만드신 주식시장 웹앱이 탐납니다. 배워보고 싶습니다.", 0], ["2", "growpoint 앱에 대해 배우고 싶습니다", 0], ["1", "실제로 필요한 것들을 구동하는 과정들을 더 해나가고 싶습니다. 이때 쓸만한 도구들을 알고 싶습니다.", 0], ["1", "코딩으로 앱을 만드는 여러 사례", 0]]}, "6": {"who": "6강", "title": "6강으로 온 질문 2개", "sub": "데이터, API, AI", "items": [["2", "api와 mcp", 0], ["1", "도커 활용 컨테이너 가상화 부분 추가 강의, 도메인 유지, 안티그라비티에 코덱스와 클로드 확장 연동 등 다양한 확장성 도구 설명", 0]]}, "7": {"who": "7강", "title": "7강으로 온 질문 3개", "sub": "서비스 개발 방법론", "items": [["2", "어제오늘 강사님들 모두 코드를 미리 짜오시고 프로그램을 실습하는 형식으로 이루어졌는데 프로그램 개발 계획 짜는 사고과정이 궁금합니다 …!", 0], ["1", "파이썬을 아주 기초만 아는데 파이썬을 더 배울 필요는 없을까요? 안티그래비티 창에서 코딩되는 게 쭉 보니까 까막눈 느낌인데 파이썬을 몰라도 되는지 궁금합니다.", 0], ["1", "일반 교사에게 이 정도 기능까지 필요한지 궁금했지만, 강의 내용은 무척 흥미로웠다는 의견", 1]]}, "ops": {"who": "운영진", "title": "운영진이 안내할 질문 1개", "sub": "학생 개인정보", "items": [["1", "교육부 개인정보 관련 내용 궁금합니다. 바이브 코딩의 가장 큰 문제 같아서요", 0]]}};
+
+(function () {
+  // 딸기우유 배색 (밝은 색 → 진한 색, 엔진의 colors와 같은 순서)
+  const SKY = { bg: '#ffc2d1', colors: ['#ffffff', '#fff1f4', '#ffd9e3', '#ffb6c9', '#ff94b2', '#f0709a', '#ffcf9e', '#b84a72'] };
+  const stage = id => {
+    try { qmEngine(document.getElementById(id), { images: [], speed: 1, radius: 0.1, bg: SKY.bg, colors: SKY.colors, ratio: '9 / 16', autoplay: true, startAt: 5, words: [] }, bgCloudSea); }
+    catch (e) { document.getElementById(id).style.background = SKY.bg; }   // WebGL이 안 되는 기기에서는 핑크 바탕만
+  };
+  stage('st-cover');
+  stage('st-last');
+  // 마지막 장의 감사 문장: 낱말이 하나씩 흐릿한 데서 또렷해졌다가 다시 흐려지며 사라짐 (투명 바탕이라 구름 위에 그대로 얹힘)
+  qmEngine(document.getElementById('st-thanks'), { images: [], speed: 1, radius: 0.1, bg: 'transparent', colors: ['#4b1f2e', '#fff1f4', '#ffd9e3', '#ffb6c9', '#c12a60', '#ffffff', '#c12a60', '#4b1f2e'], ratio: '1 / 0.74', autoplay: true, startAt: 2, words: [] }, blurIn);
+
+  const deck = document.getElementById('deck'), cards = Array.prototype.slice.call(deck.children), n = cards.length;
+  const now = document.getElementById('now'), prev = document.getElementById('prev'), next = document.getElementById('next'), dotrow = document.getElementById('dotrow');
+  const calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  // 카드 크기: 화면 폭과 높이 안에 9:16 한 장이 다 들어오게
+  function fit() {
+    const w = Math.max(240, Math.min(deck.clientWidth - 44, (deck.clientHeight - 8) * 9 / 16, 430));
+    document.documentElement.style.setProperty('--cw', Math.floor(w) + 'px');
+  }
+  fit();
+  new ResizeObserver(fit).observe(deck);
+
+  // 실제 질문 보기
+  const sheet = document.getElementById('sheet'), list = document.getElementById('sheet-list');
+  let opener = null;
+  function openSheet(btn) {
+    const d = QNA[btn.dataset.q];
+    if (!d) return;
+    opener = btn;
+    const who = document.getElementById('sheet-who');
+    who.textContent = d.who;
+    who.className = 'who' + (btn.dataset.q === 'ops' ? ' ops' : '');
+    document.getElementById('sheet-title').textContent = d.title;
+    document.getElementById('sheet-sub').textContent = d.sub;
+    list.textContent = '';
+    d.items.forEach(it => {
+      const li = document.createElement('li'), tag = document.createElement('small'), p = document.createElement('p');
+      tag.textContent = it[0] + '강을 들은 선생님' + (it[2] ? ' · 요약' : '');
+      if (it[2]) p.textContent = it[1]; else { const q = document.createElement('q'); q.textContent = it[1]; p.appendChild(q); }
+      li.appendChild(tag); li.appendChild(p); list.appendChild(li);
+    });
+    list.scrollTop = 0;
+    sheet.hidden = false;
+    document.getElementById('sheet-close').focus({ preventScroll: true });
+  }
+  function closeSheet() {
+    if (sheet.hidden) return;
+    sheet.hidden = true;
+    if (opener) opener.focus({ preventScroll: true });
+    opener = null;
+  }
+  document.querySelectorAll('.match button').forEach(b => b.addEventListener('click', () => openSheet(b)));
+  document.getElementById('sheet-close').addEventListener('click', closeSheet);
+  sheet.addEventListener('keydown', e => { if (e.key === 'Escape') { e.stopPropagation(); closeSheet(); } });
+
+  let at = 0;
+  const dots = cards.map((c, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.setAttribute('aria-label', (i + 1) + '장으로');
+    b.addEventListener('click', () => go(i));
+    dotrow.appendChild(b);
+    return b;
+  });
+  function mark(i) {
+    if (i !== at) closeSheet();   // 다른 장으로 넘어가면 질문 창은 닫음
+    at = i;
+    now.textContent = i + 1;
+    prev.disabled = i === 0;
+    next.disabled = i === n - 1;
+    dots.forEach((d, j) => { if (j === i) d.setAttribute('aria-current', 'true'); else d.removeAttribute('aria-current'); });
+  }
+  const spot = i => cards[i].offsetLeft - (deck.clientWidth - cards[i].offsetWidth) / 2;
+  function go(i) {
+    i = Math.max(0, Math.min(n - 1, i));
+    deck.scrollTo({ left: spot(i), behavior: calm ? 'auto' : 'smooth' });
+  }
+  let tick = 0;
+  deck.addEventListener('scroll', () => {
+    if (tick) return;
+    tick = requestAnimationFrame(() => {
+      tick = 0;
+      let best = 0, far = 1e9;
+      cards.forEach((c, i) => { const d = Math.abs(spot(i) - deck.scrollLeft); if (d < far) { far = d; best = i; } });
+      mark(best);
+    });
+  }, { passive: true });
+  prev.addEventListener('click', () => go(at - 1));
+  next.addEventListener('click', () => go(at + 1));
+  deck.addEventListener('keydown', e => {
+    if (e.key === 'ArrowRight') { e.preventDefault(); go(at + 1); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); go(at - 1); }
+  });
+  mark(0);
+})();
+</script>
+
+</body>
+</html>
